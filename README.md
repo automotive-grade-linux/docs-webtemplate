@@ -1,8 +1,10 @@
 Introduction
 ============
 
-This repository contains AGL documentation website sources, rendering is visible at http://docs.automotivelinux.org
-This website relies on the generator located in doctools/webdocs.
+This repository contains AGL documentation website template, rendering is visible at http://docs.automotivelinux.org
+This website relies on the generator located in [docs-tools](https://github.com/automotive-grade-linux/docs-tools)
+
+TODO: old documentation below. Should be rewritten to match new git repo scheme.
 
 Installing
 ==========
