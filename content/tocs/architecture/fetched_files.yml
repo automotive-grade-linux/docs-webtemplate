@@ -51,7 +51,7 @@ repositories:
         - source: agl_spec_v1.0_final.pdf
 
 -
-    git_name : "%project_source%/docs-agl"
+    git_name : "automotive-grade-linux/docs-sources"
     src_prefix : docs/security-blueprint
     dst_prefix: security
     documents:

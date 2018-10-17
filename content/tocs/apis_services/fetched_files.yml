@@ -251,8 +251,7 @@ repositories:
 
 -
     url_fetch: AGL_GITHUB_FETCH
-    url_edit: AGL_GITHUB_EDIT
-    git_name: "%project_source%/docs-agl"
+    git_name: "automotive-grade-linux/docs-sources"
     git_commit: "AGL_GITHUB_BRANCH"
     src_prefix: docs/app-framework
     dst_prefix: af-binder
@@ -262,8 +261,7 @@ repositories:
           label: Resources
 -
     url_fetch: AGL_GITHUB_FETCH
-    url_edit: AGL_GITHUB_EDIT
-    git_name: "%project_source%/docs-agl"
+    git_name: "automotive-grade-linux/docs-sources"
     git_commit: "AGL_GITHUB_BRANCH"
     src_prefix: docs/signaling
     dst_prefix: signaling
@@ -290,7 +288,7 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_name: "%project_source%/docs-agl"
+    git_name: "automotive-grade-linux/docs-sources"
     git_commit: "AGL_GITHUB_BRANCH"
     src_prefix: docs/audio
     dst_prefix: audio
@@ -333,7 +331,7 @@ repositories:
           label: HALs
         - source: high-level-api/TipsAndTricks/images/changeSound.png
         - source: high-level-api/TipsAndTricks/images/MixerBaseMenu.png
--  
+-
     url_fetch: "GERRIT_FETCH"
     git_name: apps/agl-service-homescreen-2017
     git_commit: "master"

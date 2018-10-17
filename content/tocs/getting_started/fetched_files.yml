@@ -23,7 +23,7 @@
 # ------------------------------------
 # url: "GERRIT_FETCH"
 # git_commit: "master"
-# repositories: 
+# repositories:
 # -
 #    git_name: src/foo
 #    src_prefix: docs
@@ -42,9 +42,9 @@ url_edit   : "AGL_GITHUB_EDIT"
 git_commit : "AGL_GITHUB_BRANCH"
 #dst_prefix : # destination_path = destination_prefix + (document.destination || document.source)
 
-repositories:    
-- 
-    git_name   : "%project_source%/docs-agl"
+repositories:
+-
+    git_name   : "automotive-grade-linux/docs-sources"
     src_prefix : docs/getting-started
     documents  :
     - source: source-code.md
