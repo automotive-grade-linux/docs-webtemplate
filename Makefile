@@ -31,7 +31,7 @@ distclean: clean
 	rm -fr $(DOCTOOLS)
 
 .PHONY: clean
-clean:
+clean: doctools
 	$(DOCBUILD) $(VERBOSE) --clean
 	rm -f $(FETCHTS)
 	rm -f $(LOCALFETCH)
