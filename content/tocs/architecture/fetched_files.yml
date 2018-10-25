@@ -52,6 +52,7 @@ repositories:
 
 -
     git_name : "automotive-grade-linux/docs-sources"
+    git_commit: master-next
     src_prefix : docs/security-blueprint
     dst_prefix: security
     documents:

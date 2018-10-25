@@ -252,7 +252,7 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_commit: master-next
     src_prefix: docs/app-framework
     dst_prefix: af-binder
     documents:
@@ -262,7 +262,7 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_commit: master-next
     src_prefix: docs/signaling
     dst_prefix: signaling
     documents:
@@ -289,7 +289,7 @@ repositories:
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_commit: master-next
     src_prefix: docs/audio
     dst_prefix: audio
     documents:

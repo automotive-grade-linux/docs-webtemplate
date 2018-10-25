@@ -45,6 +45,7 @@ git_commit : "AGL_GITHUB_BRANCH"
 repositories:
 -
     git_name   : "automotive-grade-linux/docs-sources"
+    git_commit: master-next
     src_prefix : docs/getting-started
     documents  :
     - source: source-code.md
