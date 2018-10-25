@@ -8,3 +8,4 @@ site/_data/tocs
 .fetch.ts
 .LocalFetch.ts
 doctools
+__*
