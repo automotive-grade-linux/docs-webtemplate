@@ -57,7 +57,7 @@ EOF
 
 
 SHORTOPTS="w:t:d:h"
-LONGOPTS="webtemplates-branch:,doctools-branch:,directory:,debug,help"
+LONGOPTS="webtemplate-ref:,doctools-ref:,directory:,debug,help"
 ARGS=$(getopt -s bash --options $SHORTOPTS  \
   --longoptions $LONGOPTS --name $PROGNAME -- "$@" )
 if [ ! $? -eq 0 ]; then
