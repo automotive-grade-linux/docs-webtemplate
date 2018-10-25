@@ -49,7 +49,7 @@ Usage: $PROGNAME [OPTIONS]... [DIRECTORY]
     -h, --help                            print this help
     -t, --doctools-ref=[REFERENCE]        doctools reference;
                                           REFERENCE can be a branch, a tag, a commit
-    -w, --webtemplates-ref=[REFERENCE]    webtemplates reference;
+    -w, --webtemplate-ref=[REFERENCE]    webtemplates reference;
                                           REFERENCE can be a branch, a tag, a commit
 EOF
     exit 1
@@ -67,9 +67,9 @@ eval set -- "$ARGS"
 
 while [ "$#" -gt "1" ]; do
     case "$1" in
-        -w|--webtemplates-branch)
+        -w|--webtemplate-ref)
             ref_docswebtemplate=$2;shift 2;;
-        -t|--doctools-branch)
+        -t|--doctools-ref)
             ref_doctools=$2; shift 2;;
         -d|--directory)
             DESTINATION=$2;shift 2;;
