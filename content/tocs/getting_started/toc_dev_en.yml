@@ -1,9 +1,9 @@
 #######################################################################
-# WARNING: 
+# WARNING:
 #  - TOC should reference .HTML and .md (Index OK but Error 404)
-#  - do not forget to run 'docbuild --tocs' after any changes 
+#  - do not forget to run 'docbuild --tocs' after any changes
 #
-# 
+#
 ############################ SYNTAX ###################################
 # GLOBAL OPTIONS:
 #    name: TOC (page) title
@@ -13,7 +13,7 @@
 # TOC Entry:
 #     name: TOC entry (level 1)
 #     children:
-#         - 
+#         -
 #            name: optional name for TOC entry (default: use URL FrontMatter info)
 #            url: <subdir as defined with FETCH_DIR in conf/AppDefaults.js:
 #         -
@@ -61,4 +61,19 @@ children:
     name: SDK
     children:
         - url: reference/setup-sdk-environment.html
-
+-
+#    name: Scott's new section so far
+#    children:
+#        - url: reference/scott.html
+#-
+    name: Application Development Workflow
+    children:
+        - url: reference/app-workflow-intro.html
+        - url: reference/app-workflow-image.html
+        - url: reference/app-workflow-sdk.html
+        - url: reference/app-workflow-bootables.html
+        - url: reference/app-workflow-boot.html
+        - url: reference/app-workflow-prep-app.html
+        - url: reference/app-workflow-build-app.html
+        - url: reference/app-workflow-deploy-app.html
+        - url: reference/app-workflow-debug-app.html

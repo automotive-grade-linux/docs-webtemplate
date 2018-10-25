@@ -48,6 +48,26 @@ repositories:
     git_commit: master-next
     src_prefix : docs/getting-started
     documents  :
+    - source: app-workflow-intro.md
+      label: Overview
+    - source: app-workflow-image.md
+      label: Download or Build Your Image
+    - source: app-workflow-sdk.md
+      label: Download or Build Your SDK Installer
+    - source: app-workflow-bootables.md
+      label: Create Bootable Media
+    - source: app-workflow-boot.md
+      label: Boot the Image on the Board
+    - source: app-workflow-prep-app.md
+      label: Get Ready to Create Your Application
+    - source: app-workflow-build-app.md
+      label: Create and Build the Application
+    - source: app-workflow-deploy-app.md
+      label: Deploy the Application to the Board
+    - source: app-workflow-debug-app.md
+      label: Debug the Application
+    - source: images/app-developer-workflow.png
+      destination: images/app-developer-workflow.png
     - source: source-code.md
       label: Download AGL Source Code
     - source: customize_bitbake_conf.md
