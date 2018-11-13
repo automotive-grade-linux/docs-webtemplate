@@ -39,10 +39,14 @@ name: Getting started
 template: generated_index.html
 children:
 -
-    name: Getting Started
+    name: Image Development Workflow
     children:
-        - url: reference/source-code.html
-        - url: reference/customize_bitbake_conf.html
+        - url: reference/image-workflow-intro.html
+        - url: reference/image-workflow-prep-host.html
+        - url: reference/image-workflow-download-sw.html
+        - url: reference/image-workflow-initialize-build-environment.html
+        - url: reference/image-workflow-cust-build.html
+        - url: reference/image-workflow-build.html
         - url: reference/machines/intel.html
         - url: reference/machines/qemu.html
         - url: reference/machines/R-Car-Starter-Kit-gen3.html

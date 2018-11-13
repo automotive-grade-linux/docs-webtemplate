@@ -68,18 +68,28 @@ repositories:
       label: Debug the Application
     - source: images/app-developer-workflow.png
       destination: images/app-developer-workflow.png
-    - source: source-code.md
-      label: Download AGL Source Code
-    - source: customize_bitbake_conf.md
-      label: Customize the AGL build
+    - source: image-workflow-intro.md
+      label: Overview
+    - source: image-workflow-prep-host.md
+      label: Preparing Your Build Host
+    - source: image-workflow-download-sw.md
+      label: Downloading AGL Software
+    - source: image-workflow-initialize-build-environment.md
+      label: Initializing Your Build Environment
+    - source: image-workflow-cust-build.md
+      label: Customizing Your Build
+    - source: image-workflow-build.md
+      label: Building the AGL Image
     - source: machines/intel.md
-      label: Build for Intel
+      label: Building for Most Intel 64-Bit Hardware Platforms
     - source: machines/qemu.md
       label: Build for Qemu
     - source: machines/R-Car-Starter-Kit-gen3.md
       label: Build for R Car Starter Kit gen3 board
     - source: machines/raspberrypi.md
       label: Build for Raspberry PI 2/3
+    - source: images/image-developer-workflow.png
+      destination: images/image-developer-workflow.png
     - source: troubleshooting.md
       label: Generic issues
     - source: footers/intel-footer.md
@@ -109,4 +119,5 @@ repositories:
           destination: pictures/phone.png
         - source: pictures/settings.png
           destination: pictures/settings.png
+        - source: pictures/image-developer-workflow.png
 
