@@ -30,7 +30,7 @@ RewriteEngine on
 #      Some of the below redirects are 302s, and some are 301s. 302s are used
 #      for redirects whose targets change sometimes. For example:
 #          - /docs/          -> /docs/fr/, /docs/en/, etc.
-#          - /docs/en/       -> /docs/en/dev/, /docs/en/latest/, etc.
+#          - /docs/en/       -> /docs/en/master/, /docs/en/latest/, etc.
 #          - /docs/en/latest -> /docs/en/4.0.0/, /docs/en/5.0.0/, etc.
 #
 #      301s are for PERMANENT redirects. These are used only for mapping old
@@ -38,7 +38,7 @@ RewriteEngine on
 #
 # NOTE:
 #      (\w\w(?:-\w\w)?)                   - regex for languages
-#      (?:\d+\.(?:\d+\.\d+|x))|dev|latest - regex for versions
+#      (?:\d+\.(?:\d+\.\d+|x))|master|latest - regex for versions
 #
 # NOTE:
 #      Meanings of some of the flags at the ends of rules:
@@ -75,7 +75,7 @@ RewriteRule ^.*docs/(\w\w(?:-\w\w)?)/latest$ {{site.baseurl}}/docs/$1/latest/ [R
 #
 #     docs/XX/* -> docs/YY/*
 #
-{% for redirect in site.data.redirects.language-renames %}RewriteRule ^.*docs/{{redirect[0]}}/((?:\d+\.(?:\d+\.\d+|x))|dev|latest)/(.*)$ {{site.baseurl}}/docs/{{redirect[1]}}/$1/$2 [R=302,L]
+{% for redirect in site.data.redirects.language-renames %}RewriteRule ^.*docs/{{redirect[0]}}/((?:\d+\.(?:\d+\.\d+|x))|master|latest)/(.*)$ {{site.baseurl}}/docs/{{redirect[1]}}/$1/$2 [R=302,L]
 {% endfor %}
 
 # 301 (PERMANENT):
@@ -87,7 +87,7 @@ RewriteRule ^.*docs/(\w\w(?:-\w\w)?)/latest$ {{site.baseurl}}/docs/$1/latest/ [R
 #       by site.baseurl. It is thrown away because there is no RewriteCond to
 #       control whether the rewrite happens to a URI or a local file path
 #       (when Apache is locating the local file to serve).
-{% for redirect in site.data.redirects.docs-global %}RewriteRule ^.*docs/(\w\w(?:-\w\w)?)/((?:\d+\.(?:\d+\.\d+|x))|dev|latest)/{{redirect[0]}}$ {{site.baseurl}}/docs/$1/$2/{{redirect[1]}} [NE,R=301,L]
+{% for redirect in site.data.redirects.docs-global %}RewriteRule ^.*docs/(\w\w(?:-\w\w)?)/((?:\d+\.(?:\d+\.\d+|x))|master|latest)/{{redirect[0]}}$ {{site.baseurl}}/docs/$1/$2/{{redirect[1]}} [NE,R=301,L]
 {% endfor %}
 
 # 301 (PERMANENT):

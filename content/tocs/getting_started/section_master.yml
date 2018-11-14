@@ -1,0 +1,15 @@
+url_fetch  : "AGL_GITHUB_FETCH"
+url_edit   : "AGL_GITHUB_EDIT"
+git_commit : "AGL_GITHUB_BRANCH"
+
+name: Getting started
+template: generated_index.html
+books:
+-
+    id: docs-source-getting-started
+    url_fetch: "https://raw.githubusercontent.com/benierc/docs-sources/master/%source%"
+    path: docs/getting-started-book.yml
+-
+    id: homescreen
+    url_fetch  : "https://git.automotivelinux.org/apps/homescreen/plain/homescreen/docs/homescreen-book.yml?h=sandbox/benierc/newdocs"
+    path: homescreen/docs/homescreen-book.yml
