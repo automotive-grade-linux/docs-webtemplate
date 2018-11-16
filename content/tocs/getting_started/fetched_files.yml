@@ -83,7 +83,7 @@ repositories:
     - source: machines/intel.md
       label: Building for Most Intel 64-Bit Hardware Platforms
     - source: machines/qemu.md
-      label: Build for Qemu
+      label: Building for Emulation
     - source: machines/R-Car-Starter-Kit-gen3.md
       label: Build for R Car Starter Kit gen3 board
     - source: machines/raspberrypi.md
