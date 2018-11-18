@@ -7,7 +7,8 @@ template: generated_index.html
 books:
 -
     id: docs-source-getting-started
-    url_fetch: "https://raw.githubusercontent.com/benierc/docs-sources/master/%source%"
+    git_name: "automotive-grade-linux/docs-sources"
+    git_commit: master-next
     path: docs/getting-started-book.yml
 -
     id: homescreen
