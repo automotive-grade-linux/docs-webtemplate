@@ -84,8 +84,8 @@ repositories:
       label: Building for Most Intel 64-Bit Hardware Platforms
     - source: machines/qemu.md
       label: Building for Emulation
-    - source: machines/R-Car-Starter-Kit-gen3.md
-      label: Build for R Car Starter Kit gen3 board
+    - source: machines/renesas.md
+      label: Building for Supported Renesas Boards
     - source: machines/raspberrypi.md
       label: Build for Raspberry PI 2/3
     - source: images/image-developer-workflow.png
