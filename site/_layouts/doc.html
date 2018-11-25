@@ -11,8 +11,6 @@ scripts:
   - process-uml.js
 ---
 
-{% include header.html %}
-
 {% comment %}
 set some constants
 {% endcomment %}
@@ -21,11 +19,20 @@ set some constants
 {% assign TOCSDIR = site.data.tocs %}
 {% assign TOCFILE = TOCSDIR[page.tocdir][page.tocfile] %}
 
-{% capture VERSION_ROOT %}{{DOCSDIR}}/{{page.tocdir}}/{{ page.language }}/{{ page.version }}/{% endcapture %}
-{% capture LANGUAGE_ROOT %}{{DOCSDIR}}/{{page.tocdir}}/{{ page.language }}/{% endcapture %}
+{% capture VERSION_ROOT %}{{DOCSDIR}}/{{ page.language }}/{{ page.version }}/{{page.tocdir}}/{% endcapture %}
+{% capture VERSION_URL %}{{DOCSDIR}}/{{ page.language }}/{{ page.version }}/{% endcapture %}
+{% capture LANGUAGE_ROOT %}{{DOCSDIR}}/{{ page.language }}/{% endcapture %}
 
-{% assign MY_ENTRY = page.url | replace: VERSION_ROOT,"" %}
+{% assign MY_ENTRY = page.url | replace: VERSION_ROOT,""  %}
 {% assign my_entry_parts = MY_ENTRY | split: "/" %}
+<!--
+    LANGUAGE_ROOT {{ LANGUAGE_ROOT }}
+    VERSION_ROOT {{VERSION_ROOT}}
+    DOCSDIR {{DOCSDIR}}
+    page.language {{page.language}}
+-->
+
+{% include header.html version=page.version language=page.language %}
 
 <div class="docs container">
 
@@ -196,13 +203,14 @@ set some constants
                                      layouts change from version to version
                                 {% endcomment %}
                                 {% capture other_version_root %}/docs/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
-                                {% assign other_version_url = page.url | replace:VERSION_ROOT,other_version_root %}
+                                {% assign other_version_url = page.url | replace:VERSION_URL,other_version_root %}
 
+                                {% comment %}
                                 {% unless ALL_PAGES contains other_version_url %}
                                     {% assign other_version_url = other_version_root %}
                                 {% endunless %}
-
-                                <a href="{{ site.docsurl }}{{ other_version_url }}" class="{% unless ALL_PAGES contains other_version_url %}missing-page{% endunless %}">
+                                {% endcomment %}
+                                <a href="{{ site.baseurl }}{{ other_version_url }}" class="{% unless ALL_PAGES contains other_version_url %}missing-page{% endunless %}">
                                     {% if page.version == other_version %}
                                         <span class="selected">
                                             {{ version_entry_string }}
