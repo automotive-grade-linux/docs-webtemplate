@@ -87,7 +87,7 @@ repositories:
     - source: machines/renesas.md
       label: Building for Supported Renesas Boards
     - source: machines/raspberrypi.md
-      label: Build for Raspberry PI 2/3
+      label: Building for Raspberry PI 2 or 3
     - source: images/image-developer-workflow.png
       destination: images/image-developer-workflow.png
     - source: troubleshooting.md
