@@ -5,8 +5,8 @@
 #
 # REPOSITORY ENTRY:
 # -
-#   url_fetch : gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
-#   url_edit  : gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_fetch: gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_edit: gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
 #   git_name: repository name (%repo%)
 #   git_commit: git reference: revision, SHA1, branch... (%commit%)
 #   src_prefix: prefix prepended to %source%
@@ -37,11 +37,11 @@
 # ------------------------------------
 ##############################################################################################################
 
-url_fetch  : "AGL_GITHUB_FETCH"
-url_edit   : "AGL_GITHUB_EDIT"
-git_commit : "AGL_GITHUB_BRANCH"
-#git_commit : # default defined in _tocs/xxxx/latest.yml
-#dst_prefix : # destination_path = destination_prefix + (document.destination || document.source)
+#git_commit: # default defined in _tocs/xxxx/latest.yml
+#dst_prefix: # destination_path = destination_prefix + (document.destination || document.source)
+
+url_fetch: GERRIT_FETCH
+git_commit: AGL_GERRIT_BRANCH
 
 repositories:
 -
@@ -51,8 +51,11 @@ repositories:
         - source: agl_spec_v1.0_final.pdf
 
 -
-    git_name: "automotive-grade-linux/docs-sources"
-    src_prefix : docs/security-blueprint
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: AGL_GITHUB_BRANCH
+    src_prefix: docs/security-blueprint
     dst_prefix: security
     documents:
           - source: README.md

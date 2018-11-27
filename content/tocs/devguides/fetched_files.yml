@@ -5,8 +5,8 @@
 #
 # REPOSITORY ENTRY:
 # -
-#   url_fetch : gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
-#   url_edit  : gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_fetch: gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_edit: gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
 #   git_name: repository name (%repo%)
 #   git_commit: git reference: revision, SHA1, branch... (%commit%)
 #   src_prefix: prefix prepended to %source%
@@ -37,8 +37,9 @@
 # ------------------------------------
 ##############################################################################################################
 
-url_fetch  : "GERRIT_FETCH"
-git_commit: "AGL_GERRIT_BRANCH"
+url_fetch: GERRIT_FETCH
+git_commit: AGL_GERRIT_BRANCH
+
 repositories:
 -
     git_name: AGL/meta-agl
@@ -67,9 +68,10 @@ repositories:
     documents:
         - source: appfw/03-AGL-AppFW-Privileges-Management.pdf
 -
-    url_fetch: "GITHUB_FETCH"
+    url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
     git_name: iotbzh/agl-documentation
-    git_commit: "master"
+    git_commit: master
     documents:
         - source: host-configuration/docs/0_Abstract.md
         - source: host-configuration/docs/1_Prerequisites.md
@@ -78,9 +80,10 @@ repositories:
         - source: host-configuration/docs/4_AGL_XDS.md
         - source: host-configuration/docs/5_Candevstudio.md
 -
-    url_fetch: "GITHUB_FETCH"
+    url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
     git_name: iotbzh/agl-documentation
-    git_commit: "master"
+    git_commit: master
     documents:
         - source: sdk-devkit/docs/part-1/1_0_Abstract.md
         - source: sdk-devkit/docs/part-1/1_1-Deploy_image.md
@@ -118,9 +121,7 @@ repositories:
         - source: sdk-devkit/docs/part-2/pictures/web-runtime_app.png
         - source: sdk-devkit/docs/part-2/pictures/xming_server.png
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: src/cmake-apps-module
-    git_commit: "master"
     src_prefix: "docs/dev_guide"
     dst_prefix: "cmakeafbtemplates"
     documents:
@@ -131,9 +132,7 @@ repositories:
         - source: 4_advanced_customization.md
         - source: 5_autobuild.md
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: src/xds/xds-docs
-    git_commit: "master"
     src_prefix: "docs"
     dst_prefix: "xds"
     documents:
@@ -195,16 +194,15 @@ repositories:
         - source: part-2/4_xds-gdb/3_debug.md
 
 -
-    url_fetch: "GITHUB_FETCH"
+    url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
     git_name: baylibre/agl-docs-baylibre
-    git_commit: "master"
+    git_commit: master
     documents:
         - source: CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
         - source: CIAT/training/Hands_on_lab_documentation.pdf
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: apps/app-controller-submodule
-    git_commit: master
     src_prefix: docs
     dst_prefix: ctrler
     documents:

@@ -5,8 +5,8 @@
 #
 # REPOSITORY ENTRY:
 # -
-#   url_fetch : gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
-#   url_edit  : gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_fetch: gitweb fetch URL (format string with token %repo% %commit% %source%, defined in configuration)
+#   url_edit: gitweb edut URL (format string with token %repo% %commit% %source%, defined in configuration)
 #   git_name: repository name (%repo%)
 #   git_commit: git reference: revision, SHA1, branch... (%commit%)
 #   src_prefix: prefix prepended to %source%
@@ -37,14 +37,13 @@
 # ------------------------------------
 ##############################################################################################################
 
-url_fetch  : "GERRIT_FETCH"
-git_commit : "AGL_GERRIT_BRANCH"
+url_fetch: GERRIT_FETCH
+git_commit: AGL_GERRIT_BRANCH
 
 repositories:
 -
-    git_name : src/app-framework-main
-    git_commit: master
-    src_prefix : docs
+    git_name: src/app-framework-main
+    src_prefix: docs
     dst_prefix: af-main
     documents:
         - source: 0-introduction.md
@@ -68,9 +67,8 @@ repositories:
         - source: pictures/triskel_iot_bzh.svg
 
 -
-    git_name : src/app-framework-binder
-    git_commit: master
-    src_prefix : docs
+    git_name: src/app-framework-binder
+    src_prefix: docs
     dst_prefix: af-binder
     documents:
         - source: index.md
@@ -127,9 +125,8 @@ repositories:
         - source: pictures/triskel_iot_bzh.svg
 
 -
-    git_name : apps/agl-service-can-low-level
-    git_commit: master
-    src_prefix : docs
+    git_name: apps/agl-service-can-low-level
+    src_prefix: docs
     dst_prefix: signaling
     documents:
         - source: 1-Architecture.md
@@ -146,9 +143,8 @@ repositories:
         - source: images/OpenXC_to_AGL.png
 
 -
-    git_name : apps/app-afb-test
-    git_commit: master
-    src_prefix : docs
+    git_name: apps/app-afb-test
+    src_prefix: docs
     dst_prefix: afb-test
     documents:
         - source: 0_Installation.md
@@ -199,9 +195,10 @@ repositories:
 
 -
     url_fetch: GITHUB_FETCH
-    git_name : iotbzh/high-level-viwi-service
+    url_edit: GITHUB_EDIT
+    git_name: iotbzh/high-level-viwi-service
     git_commit: master
-    src_prefix : docs
+    src_prefix: docs
     dst_prefix: signaling
     documents:
         - source: 1-Architecture.md
@@ -212,9 +209,7 @@ repositories:
           label: Installation and Usage Guide
         - source: images/high-level-arch.png
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: apps/agl-service-signal-composer
-    git_commit: "master"
     src_prefix: docs/part-1/
     dst_prefix: signaling
     documents:
@@ -233,9 +228,10 @@ repositories:
         - source: pictures/Global_Signaling_Architecture.png
         - source: pictures/iotbzh_logo_small.png
 -
-    url_fetch: "GITHUB_FETCH"
+    url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
     git_name: iotbzh/agl-documentation
-    git_commit: "master"
+    git_commit: master
     documents:
         - source: candevstudio/docs/1_Usage.md
         - source: candevstudio/docs/2_can_device_socketcan_backend.md
@@ -249,8 +245,8 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: AGL_GITHUB_BRANCH
     src_prefix: docs/app-framework
     dst_prefix: af-binder
     documents:
@@ -260,8 +256,8 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: AGL_GITHUB_BRANCH
     src_prefix: docs/signaling
     dst_prefix: signaling
     documents:
@@ -287,8 +283,8 @@ repositories:
 -
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_name: "automotive-grade-linux/docs-sources"
-    git_commit: "AGL_GITHUB_BRANCH"
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: AGL_GITHUB_BRANCH
     src_prefix: docs/audio
     dst_prefix: audio
     documents:
@@ -299,10 +295,8 @@ repositories:
           destination: bluez-alsa.md
           label: bluez-alsa
 -
-    url_fetch: "GERRIT_FETCH"
-    git_commit : "AGL_GERRIT_BRANCH"
     git_name: apps/agl-service-audio-4a
-    src_prefix : docs
+    src_prefix: docs
     dst_prefix: audio
     documents:
         - source: 4a-framework/README.md
@@ -331,9 +325,7 @@ repositories:
         - source: high-level-api/TipsAndTricks/images/changeSound.png
         - source: high-level-api/TipsAndTricks/images/MixerBaseMenu.png
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: apps/agl-service-homescreen
-    git_commit: "master"
     src_prefix: doc/
     dst_prefix: hmi-framework/
     documents:
@@ -347,9 +339,7 @@ repositories:
         - source: parts/software-stack.png
         - source: parts/tap_shortcut.svg
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: apps/agl-service-windowmanager
-    git_commit: "master"
     src_prefix: doc/
     dst_prefix: hmi-framework/
     documents:
@@ -365,9 +355,7 @@ repositories:
         - source: parts/request_role.png
         - source: parts/wm_layer_stack.png
 -
-    url_fetch: "GERRIT_FETCH"
     git_name: apps/agl-service-soundmanager
-    git_commit: "master"
     src_prefix: doc/
     dst_prefix: hmi-framework/
     documents:
@@ -395,11 +383,9 @@ repositories:
         - source: parts/typical-usecase.png
         - source: parts/am-component.png
 -
-    url_fetch  : GERRIT_FETCH
-    git_commit : master
-    git_name   : apps/homescreen
-    src_prefix : homescreen/docs
-    dst_prefix : homescreen
+    git_name: apps/homescreen
+    src_prefix: homescreen/docs
+    dst_prefix: homescreen
     documents:
         - source: homescreen_api.md
           label: HomeScreen API
