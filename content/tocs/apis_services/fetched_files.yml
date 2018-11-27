@@ -49,6 +49,8 @@ repositories:
     documents:
         - source: 0-introduction.md
           label: Introduction
+        - source: 0-kristi-introduction.md
+          label: API Reference
         - source: 1-afm-daemons.md
           label: The afm daemons
         - source: 2-widgets.md
