@@ -346,14 +346,6 @@ repositories:
         - source: ApplicationGuide.md
           destination: 3_2-WindowManager-Guide.md
           label: Window Manager Developper Guide
-        - source: parts/state_change_example.png
-        - source: parts/wm_software_stack.png
-        - source: parts/wm_layer_stack.png
-        - source: parts/wm_area.png
-        - source: parts/request_role.png
-        - source: parts/hmi_framework_designed_seq_toyota.png
-        - source: parts/deactivate_window.png
-        - source: parts/example_split.png
 -
     git_name: apps/agl-service-soundmanager
     src_prefix: doc/
