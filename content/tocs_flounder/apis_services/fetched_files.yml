@@ -325,6 +325,14 @@ repositories:
         - source: high-level-api/TipsAndTricks/images/changeSound.png
         - source: high-level-api/TipsAndTricks/images/MixerBaseMenu.png
 -
+    git_name: src/pulseaudio-module-4a
+    git_commit: master
+    dst_prefix: audio
+    documents:
+        - source: README.md
+          destination: pulseaudio-module-4a.md
+          label: Pulseaudio - 4A Integration Module
+-
     git_name: apps/agl-service-homescreen
     src_prefix: doc/
     dst_prefix: hmi-framework/
