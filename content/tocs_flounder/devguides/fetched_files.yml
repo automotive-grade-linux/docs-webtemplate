@@ -121,16 +121,11 @@ repositories:
         - source: sdk-devkit/docs/part-2/pictures/web-runtime_app.png
         - source: sdk-devkit/docs/part-2/pictures/xming_server.png
 -
-    git_name: src/cmake-apps-module
-    src_prefix: "docs/dev_guide"
-    dst_prefix: "cmakeafbtemplates"
+    git_name: apps/app-templates
+    dst_prefix: "sdk-devkit/docs/part-2"
     documents:
-        - source: 0_Abstract.md
-        - source: 1_Quickstart.md
-        - source: 2_project_architecture.md
-        - source: 3_advanced_usage.md
-        - source: 4_advanced_customization.md
-        - source: 5_autobuild.md
+        - source: README.md
+          destination: 2_4-Use-app-templates.md
 -
     git_name: src/xds/xds-docs
     src_prefix: "docs"
