@@ -62,9 +62,9 @@ children:
         - url: reference/footers/intel-footer.html
         - url: reference/footers/raspberrypi-footer.html
 -
-    name: SDK
+    name: Docker Containers
     children:
-        - url: reference/setup-sdk-environment.html
+        - url: reference/docker-container-setup.html
 -
 #    name: Scott's new section so far
 #    children:
