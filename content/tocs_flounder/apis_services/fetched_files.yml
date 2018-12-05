@@ -332,14 +332,12 @@ repositories:
         - source: ApplicationGuide.md
           destination: 3_1-HomeScreen-Guide.md
           label: Home Screen Developper Guide
-        - source: parts/software-stack.png
+        - source: parts/initialize-registercallback.svg
         - source: parts/initialize-set-event-handler.svg
-        - source: parts/tap_shortcut.svg
-        - source: parts/showWindow.svg
+        - source: parts/initialize.svg
         - source: parts/on_screen_message.svg
-        - source: parts/showOnScreen.svg
-        - source: parts/showNotification.svg
-        - source: parts/showInformation.svg
+        - source: parts/software-stack.png
+        - source: parts/tap_shortcut.svg
 -
     git_name: apps/agl-service-windowmanager
     src_prefix: doc/
