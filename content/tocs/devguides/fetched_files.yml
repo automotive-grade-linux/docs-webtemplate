@@ -62,7 +62,7 @@ repositories:
           destination: meta-agl-devel.md
           label: meta-agl-devel
 -
-    url_fetch: http://iot.bzh/download/public/2016/%source%
+    url_fetch: https://iot.bzh/download/public/2016/%source%
     dst_prefix: iotbzh2016
     documents:
         - source: appfw/03-AGL-AppFW-Privileges-Management.pdf

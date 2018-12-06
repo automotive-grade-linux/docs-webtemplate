@@ -96,7 +96,7 @@ repositories:
       label: Intel Boards
     - source: footers/raspberrypi-footer.md
       label: Raspberry PI
-    - source: images/RaspberryPi2-ModelB-debug-serial-cable.jpg
+    - source: footers/images/RaspberryPi2-ModelB-debug-serial-cable.jpg
       destination: footers/images/RaspberryPi2-ModelB-debug-serial-cable.jpg
     - source: docker-container-setup.md
       label: Setting Up a Docker Container
@@ -119,5 +119,4 @@ repositories:
           destination: pictures/phone.png
         - source: pictures/settings.png
           destination: pictures/settings.png
-        - source: pictures/image-developer-workflow.png
 
