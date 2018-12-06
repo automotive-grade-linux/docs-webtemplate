@@ -8,7 +8,7 @@ books:
 -
     id: docs-source-getting-started
     git_name: "automotive-grade-linux/docs-sources"
-    git_commit: master-next
+    git_commit: AGL_GITHUB_BRANCH
     path: docs/getting-started-book.yml
 -
     id: homescreen
