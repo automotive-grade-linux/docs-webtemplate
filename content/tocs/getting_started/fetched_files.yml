@@ -94,8 +94,6 @@ repositories:
       destination: images/image-developer-workflow.png
     - source: troubleshooting.md
       label: Generic issues
-    - source: footers/intel-footer.md
-      label: Intel Boards
     - source: footers/raspberrypi-footer.md
       label: Raspberry PI
     - source: footers/images/RaspberryPi2-ModelB-debug-serial-cable.jpg
