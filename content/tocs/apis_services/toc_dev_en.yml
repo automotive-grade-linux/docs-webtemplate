@@ -95,7 +95,7 @@ children:
                 - url: reference/afb-test/binding-assert-functions.html
                 - url: reference/afb-test/test-framework-functions.html
                 - name: LuaUnit Assertion Functions
-                  children: 
+                  children:
                         - url: reference/afb-test/general-assertions.html
                         - url: reference/afb-test/value-assertions.html
                         - url: reference/afb-test/scientific-assertions.html
