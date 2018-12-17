@@ -94,10 +94,8 @@ repositories:
       destination: images/image-developer-workflow.png
     - source: troubleshooting.md
       label: Generic issues
-    - source: footers/raspberrypi-footer.md
-      label: Raspberry PI
-    - source: footers/images/RaspberryPi2-ModelB-debug-serial-cable.jpg
-      destination: footers/images/RaspberryPi2-ModelB-debug-serial-cable.jpg
+    - source: machines/images/RaspberryPi2-ModelB-debug-serial-cable.png
+      destination: machines/images/RaspberryPi2-ModelB-debug-serial-cable.png
     - source: docker-container-setup.md
       label: Setting Up a Docker Container
 -

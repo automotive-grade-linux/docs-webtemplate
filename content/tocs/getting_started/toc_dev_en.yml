@@ -55,11 +55,11 @@ children:
     name: HomeScreen
     children:
         - url: reference/homescreen/index.html
--
-    name: Troubleshooting
-    children:
-        - url: reference/troubleshooting.html
-        - url: reference/footers/raspberrypi-footer.html
+## -
+##     name: Troubleshooting
+##     children:
+##         - url: reference/troubleshooting.html
+##         - url: reference/footers/raspberrypi-footer.html
 -
     name: Docker Containers
     children:
