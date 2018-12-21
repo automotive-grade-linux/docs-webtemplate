@@ -39,7 +39,11 @@ name: Getting started
 template: generated_index.html
 children:
 -
-    name: Image Development Workflow
+    name: Welcome!
+    children:
+        - url: reference/getting-started-welcome.html
+-
+    name: Developing an AGL Image
     children:
         - url: reference/image-workflow-intro.html
         - url: reference/image-workflow-prep-host.html
@@ -55,13 +59,12 @@ children:
     name: HomeScreen
     children:
         - url: reference/homescreen/index.html
-## -
-##     name: Troubleshooting
-##     children:
-##         - url: reference/troubleshooting.html
-##         - url: reference/footers/raspberrypi-footer.html
 -
-    name: Docker Containers
+    name: Troubleshooting
+    children:
+        - url: reference/troubleshooting.html
+-
+    name: Setting Up a Docker Container
     children:
         - url: reference/docker-container-setup.html
 -
@@ -69,7 +72,7 @@ children:
 #    children:
 #        - url: reference/scott.html
 #-
-    name: Application Development Workflow
+    name: Developing an Application
     children:
         - url: reference/app-workflow-intro.html
         - url: reference/app-workflow-image.html
