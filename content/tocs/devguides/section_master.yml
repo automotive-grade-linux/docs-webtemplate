@@ -1,0 +1,50 @@
+url_fetch  : "GERRIT_FETCH"
+git_commit : "AGL_GERRIT_BRANCH"
+
+name: Developers Guides
+template: generated_index.html
+books:
+-
+    id: meta-agl-developer-guides
+    git_name: AGL/meta-agl
+    path: docs/devguides-book.yml
+-
+    id: meta-agl-demo-guides
+    git_name: AGL/meta-agl-demo
+    path: docs/devguides-book.yml
+-
+    id: meta-agl-devel-guides
+    git_name: AGL/meta-agl-devel
+    path: docs/devguides-book.yml
+#-
+#    url_fetch: https://iot.bzh/download/public/2016/%source%
+#    dst_prefix: iotbzh2016
+#    documents:
+#        - source: appfw/03-AGL-AppFW-Privileges-Management.pdf
+-
+    id: host-configuration-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: iotbzh/agl-documentation
+    path: host-configuration/docs/devguides-book.yml
+-
+    id: cmake-apps-module-guides
+    git_name: src/cmake-apps-module
+    path: docs/devguides-book.yml
+-
+    id: xds-docs-guides
+    git_name: src/xds/xds-docs
+    path: docs/devguides-book.yml
+#-
+#    url_fetch: GITHUB_FETCH
+#    url_edit: GITHUB_EDIT
+#    git_name: baylibre/agl-docs-baylibre
+#    git_commit: master
+#    documents:
+#        - source: CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
+#        - source: CIAT/training/Hands_on_lab_documentation.pdf
+-
+    id: app-controller-submodule-guides
+    git_name: apps/app-controller-submodule
+    path: docs/devguides-book.yml
+
+

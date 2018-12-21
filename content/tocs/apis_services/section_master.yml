@@ -1,7 +1,7 @@
 url_fetch  : "GERRIT_FETCH"
 git_commit : "AGL_GERRIT_BRANCH"
 
-name: Developer Guides
+name: APIs & Services
 template: generated_index.html
 books:
 -
@@ -13,64 +13,72 @@ books:
     git_name: src/app-framework-binder
     path: docs/api-services-book.yml
 -
-    id: app-afb-test-developer-guides
-    git_name: apps/app-afb-test
+    id: agl-service-can-low-level-developer-guides
+    git_name: apps/agl-service-can-low-level
     path: docs/api-services-book.yml
-    #-
-    #    id: docs-sources-developer-guides
-    #    url_fetch: GITHUB_FETCH
-    #    git_name: automotive-grade-linux/docs-sources
-    #    path: docs/api-services-book.yml
-    #    books:
-    #    -
-    #        id: agl-service-can-low-level-developer-guides
-    #        git_name: apps/agl-service-can-low-level
-    #        path: docs/api-services-book.yml
-    #    -
-    #        id: high-level-developer-guides
-    #        url_fetch: GITHUB_FETCH
-    #        git_name: iotbzh/high-level-viwi-service
-    #        path: docs/api-services-book.yml
-    #    -
-    #        id: agl-service-signal-composer-developer-guides
-    #        git_name: apps/agl-service-signal-composer
-    #        path: docs/api-services-book.yml
+#-
+#    id: app-afb-test-developer-guides
+#    git_name: apps/app-afb-test
+#    path: docs/api-services-book.yml
+-
+    id: high-level-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: iotbzh/high-level-viwi-service
+    path: docs/api-services-book.yml
+-
+    id: agl-service-signal-composer-developer-guides
+    git_name: apps/agl-service-signal-composer
+    path: docs/api-services-book.yml
+-
+    id: candevstudio-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: iotbzh/agl-documentation
+    path: candevstudio/docs/api-services-book.yml
+-
+    id: app-framework-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: sandbox/benierc/newdocs
+    path: docs/app-framework-book.yml
+-
+    id: signaling-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: sandbox/benierc/newdocs
+    path: docs/signaling-book.yml
+
     ##- name: Developer Guidelines
     ##  url: reference/iotbzh2016/signaling/AGL-Message-Signaling-Developer-Guidelines.pdf
     ##- name: CAN Signaling Benchmark
     ##  url: reference/iotbzh2016/signaling/AGL-AppFW-CAN-Signaling-Benchmark.pdf
-    #    -
-    #        id: iotbzh-agl-documentation-developer-guides
-    #        url_fetch: GITHUB_FETCH
-    #        git_name: iotbzh/agl-documentation
-    #        path: api-services-book.yml
-    #-
-    #    id: agl-service-audio-4a-developer-guides
-    #    git_name: apps/agl-service-audio-4a
-    #    path: docs/api-services-book.yml
-    #    -
-    #        id: docs-sources-audio-developer-guides
-    #        url_fetch: GITHUB_FETCH
-    #        git_name: automotive-grade-linux/docs-sources
-    #        path: docs/audio-api-services-book.yml
-    #-
-    #    id: pulseaudio-module-4a-developer-guides
-    #    git_name: src/pulseaudio-module-4a
-    #    path: api-services-book.yml
-    #-
-    #    id: agl-service-homescreen-developer-guides
-    #    git_name: apps/agl-service-homescreen
-    #    path: doc/api-services-book.yml
-    #-
-    #    id: agl-service-windowmanager-developer-guides
-    #    git_name: apps/agl-service-windowmanager
-    #    path: doc/api-services-book.yml
-    #-
-    #    id: agl-service-soundmanager-developer-guides
-    #    git_name: apps/agl-service-soundmanager
-    #    path: doc/api-services-book.yml
-    #-
-    #    id: homescreen-developer-guides
-    #    git_name: apps/homescreen
-    #    path: api-services-book.yml
-    #
+-
+    id: audio-developer-guides
+    url_fetch: GITHUB_FETCH
+    git_name: automotive-grade-linux/docs-sources
+    git_commit: sandbox/benierc/newdocs
+    path: docs/audio-book.yml
+-
+    id: agl-service-audio-4a-developer-guides
+    git_name: apps/agl-service-audio-4a
+    path: docs/api-services-book.yml
+-
+    id: pulseaudio-module-4a-developer-guides
+    git_name: src/pulseaudio-module-4a
+    path: api-services-book.yml
+-
+    id: agl-service-homescreen-developer-guides
+    git_name: apps/agl-service-homescreen
+    path: doc/api-services-book.yml
+-
+    id: agl-service-windowmanager-developer-guides
+    git_name: apps/agl-service-windowmanager
+    path: doc/api-services-book.yml
+-
+    id: agl-service-soundmanager-developer-guides
+    git_name: apps/agl-service-soundmanager
+    path: doc/api-services-book.yml
+-
+    id: homescreen-developer-guides
+    git_name: apps/homescreen
+    path: homescreen/docs/api-services-book.yml
+
