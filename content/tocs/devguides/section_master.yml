@@ -24,16 +24,19 @@ books:
 -
     id: host-configuration-developer-guides
     url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
     git_name: iotbzh/agl-documentation
     path: host-configuration/docs/devguides-book.yml
 -
     id: cmake-apps-module-guides
     git_name: src/cmake-apps-module
     path: docs/devguides-book.yml
+    dst_prefix: "cmakeafbtemplates"
 -
     id: xds-docs-guides
     git_name: src/xds/xds-docs
     path: docs/devguides-book.yml
+    dst_prefix: "xds"
 #-
 #    url_fetch: GITHUB_FETCH
 #    url_edit: GITHUB_EDIT
@@ -46,5 +49,6 @@ books:
     id: app-controller-submodule-guides
     git_name: apps/app-controller-submodule
     path: docs/devguides-book.yml
+    dst_prefix: ctrler
 
 

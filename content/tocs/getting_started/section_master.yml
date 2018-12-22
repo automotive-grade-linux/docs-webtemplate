@@ -7,6 +7,7 @@ books:
 -
     id: image-development-workflow
     url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
     # FIXME: delete line below to switch back to AGL_GERRIT_BRANCH
     git_commit: sandbox/benierc/newdocs
     git_name: automotive-grade-linux/docs-sources
