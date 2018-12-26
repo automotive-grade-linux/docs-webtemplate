@@ -46,7 +46,7 @@ repositories:
     documents:
         - source: README-AGL.md
           destination: AGL.md
-          label: AGL Overview
+          label: Overview
         - source: README.md
           destination: meta-agl.md
           label: meta-agl
