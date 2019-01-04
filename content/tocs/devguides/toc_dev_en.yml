@@ -245,6 +245,18 @@ children:
           - url: reference/ctrler/configSample.html
 
 -
+    name: AFB Helper functions reference
+    children:
+          - url: reference/afb-helpers/usage.html
+          - url: reference/afb-helpers/afb-timer.html
+          - url: reference/afb-helpers/curl-wrap.html
+          - url: reference/afb-helpers/escape.html
+          - url: reference/afb-helpers/filescan-utils.html
+          - url: reference/afb-helpers/qafbwebsocketclient.html
+          - url: reference/afb-helpers/json.html
+          - url: reference/afb-helpers/wrap-json.html
+
+-
     name: "Continuous Integration - Automated Testing (CIAT)"
     children:
         -

@@ -172,3 +172,25 @@ repositories:
           label: Installation
         - source: controllerConfig.md
           label: Binding Configuration
+-
+    git_name: src/libafb-helpers
+    src_prefix: docs
+    dst_prefix: afb-helpers
+    git_commit: sandbox/claneys/docs
+    documents:
+        - source: usage.md
+          label: Usage
+        - source: afb-timer.md
+          label: AFB Timer
+        - source: curl-wrap.md
+          label: CURL wrapper
+        - source: escape.md
+          label: URL escaping
+        - source: filescan-utils.md
+          label: Filescan Utils
+        - source: qafbwebsocketclient.md
+          label: Qt AFB Websocket client
+        - source: json.md
+          label: JSON library for modern C++
+        - source: wrap-json.md
+          label: C JSON Wrapper
