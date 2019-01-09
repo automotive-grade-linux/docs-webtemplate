@@ -10,3 +10,5 @@ site/_data/docs-versions.yml
 .LocalFetch.ts
 doctools
 __*
+node_modules/*
+package-lock.json

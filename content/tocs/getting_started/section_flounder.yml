@@ -1,0 +1,20 @@
+url_fetch  : "GERRIT_FETCH"
+git_commit : "flounder"
+
+name: Getting started
+template: generated_index.html
+books:
+-
+    id: image-development-workflow-flounder
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    # FIXME: delete line below to switch back to AGL_GERRIT_BRANCH
+    git_commit: sandbox/benierc/newdocs
+    git_name: automotive-grade-linux/docs-sources
+    path: docs/getting-started-book.yml
+-
+    id: apps-homescreen-flounder
+    url_fetch: GERRIT_FETCH
+    git_name: apps/homescreen
+    dst_prefix: homescreen
+    path: homescreen/docs/homescreen-book.yml
