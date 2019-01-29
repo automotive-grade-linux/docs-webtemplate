@@ -79,10 +79,10 @@ repositories:
         - source: host-configuration/docs/5_Candevstudio.md
 -
     git_name: apps/app-templates
-    dst_prefix: "sdk-devkit/docs/part-2"
+    dst_prefix: "app-templates"
     documents:
         - source: README.md
-          destination: 2_4-Use-app-templates.md
+          destination: 0-App-templates-usage.md
 -
     git_name: src/xds/xds-docs
     src_prefix: "docs"
