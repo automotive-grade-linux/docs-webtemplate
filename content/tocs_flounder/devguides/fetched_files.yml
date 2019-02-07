@@ -82,7 +82,7 @@ repositories:
     dst_prefix: "app-templates"
     documents:
         - source: README.md
-          destination: 0-App-templates-usage.md
+          destination: docs/0-App-templates-usage.md
 -
     git_name: src/xds/xds-docs
     src_prefix: "docs"
