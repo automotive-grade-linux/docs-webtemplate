@@ -67,6 +67,12 @@ children:
             name: CanDevStudio
             url: reference/host-configuration/docs/5_Candevstudio.html
 -
+    name: App-Templates Submodule
+    children:
+        -
+            name: CMake templates Guide
+            url: reference/app-templates/docs/0-App-templates-usage.html
+-
     name: "X(cross) Development System: User's Guide"
     children:
         -
