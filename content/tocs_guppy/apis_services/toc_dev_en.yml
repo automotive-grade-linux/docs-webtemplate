@@ -1,0 +1,176 @@
+#######################################################################
+# WARNING:
+#  - TOC should reference .HTML and .md (Index OK but Error 404)
+#  - do not forget to run 'docbuild --tocs' after any changes
+#
+#
+############################ SYNTAX ###################################
+# GLOBAL OPTIONS:
+#    name: TOC (page) title
+#    template: name of template to use for this page - use 'generated_index.html' if unknown
+#    children: array of TOC entries
+#
+# TOC Entry:
+#     name: TOC entry (level 1)
+#     children:
+#         -
+#            name: optional name for TOC entry (default: use URL FrontMatter info)
+#            url: <subdir as defined with FETCH_DIR in conf/AppDefaults.js:
+#         -
+#            name: ...
+#            url: ...
+#         ...
+#
+# EXAMPLE:
+# -------------------------------
+# name: Developer Guides
+# template: generated_index.html
+# children:
+# -
+#   name: Application Framework
+#   children:
+#       - url: reference/af-main/overview.html
+#       - url: reference/af-main/afm-system-daemon.html
+#       - url: reference/af-main/afm-user-daemon.html
+# -------------------------------
+#######################################################################
+
+name: Developer Guides
+template: generated_index.html
+children:
+-
+    name: Application Framework
+    children:
+        - url: reference/af-main/0-introduction.html
+        - url: reference/af-main/1-afm-daemons.html
+        - url: reference/af-main/2-widgets.html
+        - url: reference/af-main/2.1-widgets.html
+        - url: reference/af-main/2.2-config.xml.html
+        - url: reference/af-main/3-permissions.html
+        - url: reference/af-main/4-quick-tutorial.html
+-
+    name: Application Framework Binder
+    children:
+        - url: reference/af-binder/afb-overview.html
+        - url: reference/af-binder/afb-daemon-vocabulary.html
+        - url: reference/af-binder/afb-binding-writing.html
+        - name: Binder references
+          children:
+               - url: reference/af-binder/reference-v3/types-and-globals.html
+               - url: reference/af-binder/reference-v3/macro-log.html
+               - url: reference/af-binder/reference-v3/func-api.html
+               - url: reference/af-binder/reference-v3/func-req.html
+               - url: reference/af-binder/reference-v3/func-event.html
+               - url: reference/af-binder/reference-v3/func-daemon.html
+               - url: reference/af-binder/reference-v3/func-service.html
+        - url: reference/af-binder/afb-events-guide.html
+        - url: reference/af-binder/afb-application-writing.html
+        - name: Annexes
+          children:
+                - url: reference/af-binder/afb-migration-to-binding-v3.html
+                - url: reference/af-binder/protocol-x-afb-ws-json1.html
+                - url: reference/af-binder/afb-desktop-package.html
+                - url: reference/af-binder/afb-daemon-options.html
+                - url: reference/af-binder/afb-daemon-debugging.html
+                - url: reference/af-binder/legacy/afb-migration-v1-to-v2.html
+                - url: reference/af-binder/legacy/afb-binding-v2-references.html
+        - url: reference/af-binder/REVISIONS.html
+
+-
+    name: AGL Test Framework
+    children:
+        - url: reference/afb-test/Installation.html
+        - url: reference/afb-test/write-the-tests.html
+        - url: reference/afb-test/the-test-widget.html
+        - url: reference/afb-test/launch-the-tests.html
+        - url: reference/afb-test/tests-examples.html
+        - name: References
+          children:
+                - url: reference/afb-test/binding-test-functions.html
+                - url: reference/afb-test/binding-assert-functions.html
+                - url: reference/afb-test/test-framework-functions.html
+                - name: LuaUnit Assertion Functions
+                  children: 
+                        - url: reference/afb-test/general-assertions.html
+                        - url: reference/afb-test/value-assertions.html
+                        - url: reference/afb-test/scientific-assertions.html
+                        - url: reference/afb-test/string-assertions.html
+                        - url: reference/afb-test/error-assertions.html
+                        - url: reference/afb-test/type-assertions.html
+                        - url: reference/afb-test/table-assertions.html
+
+-
+    name: Message Signaling
+    children:
+        - url: reference/signaling/architecture.html
+        - name: Low level CAN service Guide
+          children:
+                - url: reference/signaling/low-can-architecture.html
+                - url: reference/signaling/low-can-installation-guide.html
+                - url: reference/signaling/low-can-usage-guide.html
+        - name: High level ViWi service Guide
+          children:
+                - url: reference/signaling/high-viwi-architecture.html
+                - url: reference/signaling/high-viwi-install-usage-guide.html
+        - name: Signal Composer service Guide
+          children:
+                - url: reference/signaling/signal-composer-architecture.html
+                - url: reference/signaling/signal-composer-configuration.html
+                - url: reference/signaling/signal-composer-plugins.html
+                - url: reference/signaling/signal-composer-api.html
+        - name: Developer Guidelines
+          url: reference/iotbzh2016/signaling/AGL-Message-Signaling-Developer-Guidelines.pdf
+        - name: CAN Signaling Benchmark
+          url: reference/iotbzh2016/signaling/AGL-AppFW-CAN-Signaling-Benchmark.pdf
+        - name: CanDevStudio Quickstart
+          children:
+                - name: Usage Guide
+                  url: reference/candevstudio/docs/1_Usage.html
+                - name: Bringing up a CAN device using socketcan backend
+                  url: reference/candevstudio/docs/2_can_device_socketcan_backend.html
+                - name: Add a CAN device in CANdevStudio
+                  url: reference/candevstudio/docs/3_Add_CAN_Device.html
+                - name: Configure a CanRawSender node
+                  url: reference/candevstudio/docs/4_Configure_CanRawSender_Node.html
+                - name: Using CanRawView
+                  url: reference/candevstudio/docs/5_Using_CanRawView.html
+        - url: reference/signaling/resources.html
+-
+    name: Audio Framework
+    children:
+        - url: reference/audio/bluez-alsa.html
+        - url: reference/audio/pulseaudio-module-4a.html
+        - name: 4a Framework
+          children:
+              - url: reference/audio/4a-framework/README.html
+              - url: reference/audio/4a-framework/concepts.html
+              - url: reference/audio/4a-framework/components.html
+              - name: high-level-api
+                children:
+                  - url: reference/audio/high-level-api/README.html
+                  - url: reference/audio/high-level-api/kickstart.html
+                  - url: reference/audio/high-level-api/reference.html
+                  - name: Tips And Tricks
+                    children:
+                      - url: reference/audio/high-level-api/TipsAndTricks/AdjustVolumes.html
+                      - url: reference/audio/high-level-api/TipsAndTricks/4aTools.html
+                      - url: reference/audio/high-level-api/TipsAndTricks/Devices.html
+                      - url: reference/audio/high-level-api/TipsAndTricks/HALs.html
+-
+    name: HMI Framework
+    children:
+        -
+            name: Home Screen Developper Guide
+            url: reference/hmi-framework/3_1-HomeScreen-Guide.html
+        -
+            name: Window Manager Developper Guide
+            url: reference/hmi-framework/3_2-WindowManager-Guide.html
+        -
+            name: Sound Manager Developper Guide
+            url: reference/hmi-framework/3_3-SoundManager-Guide.html
+-
+    name: HomeScreen (old)
+    children:
+        - url: reference/homescreen/homescreen_api.html
+
+
