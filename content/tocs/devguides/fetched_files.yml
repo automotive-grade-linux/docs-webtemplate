@@ -176,7 +176,6 @@ repositories:
     git_name: src/libafb-helpers
     src_prefix: docs
     dst_prefix: afb-helpers
-    git_commit: sandbox/claneys/docs
     documents:
         - source: usage.md
           label: Usage
