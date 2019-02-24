@@ -6,13 +6,10 @@ git_commit : "sandbox/benierc/newdocs"
 name: Developer Guides
 template: generated_index.html
 books:
-# FIXME: fix support of pdf source
-# -
-#     id: agl_specifications
-#     url_fetch: AGL_GITHUB_FETCH
-#     git_name: automotive-grade-linux/docs-sources
-#     dst_prefix: AGL_Specifications
-#     path: docs/agl-specs-book.yml
+-
+        id: agl-specifications
+        path: https://wiki.automotivelinux.org/_media/agl_spec_v1.0_final.pdf
+        name: AGL Requirements Specifications
 -
     id: security_blueprint
     url_fetch: AGL_GITHUB_FETCH
