@@ -1,0 +1,18 @@
+url_fetch  : "GERRIT_FETCH"
+
+name: Getting started
+template: generated_index.html
+books:
+-
+    id: image-development-workflow
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_commit: master
+    git_name: automotive-grade-linux/docs-sources
+    path: docs/getting-started-book.yml
+-
+    id: apps-homescreen
+    url_fetch: GERRIT_FETCH
+    git_name: apps/homescreen
+    dst_prefix: homescreen
+    path: homescreen/docs/homescreen-book.yml
