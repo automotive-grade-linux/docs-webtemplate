@@ -5,7 +5,10 @@ build-dev
 conf/_release.yml
 site/_data/all-pages.yml
 site/_data/tocs
+site/_data/docs-versions.yml
 .fetch.ts
 .LocalFetch.ts
 doctools
 __*
+node_modules/*
+package-lock.json

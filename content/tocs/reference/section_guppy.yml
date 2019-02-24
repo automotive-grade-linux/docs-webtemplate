@@ -1,0 +1,4 @@
+url_fetch  : "GERRIT_FETCH"
+
+name: How To
+template: generated_index.html

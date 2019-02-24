@@ -1,3 +1,15 @@
+{% if include.language == "" or include.language == nil %}
+    {% assign LANGUAGE = "en" %}
+{% else %}
+    {% assign LANGUAGE = include.language %}
+{% endif %}
+{% if include.version == "" or include.version == nil %}
+    {% assign VERSION = site.default_linked_docs_version %}
+{% else %}
+    {% assign VERSION = include.version %}
+{% endif %}
+<!-- LANGUAGE: {{LANGUAGE}} {{include.language}} -->
+<!-- VERSION: {{VERSION}} {{include.version}}-->
 <header>
     <a class="scroll-point pt-top" name="top"></a>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -15,23 +27,31 @@
                 <div class="nav_bar_left">
                     <ul class="nav navbar-nav">
                         <li {% if page.specs_tab %}class="active"{% endif %}>
-                            <a href="{{ site.docsurl }}/getting_started/en/{{ site.default_linked_docs_version }}/">Getting Started</a>
-                        </li>
-                                                
-                        <li {% if page.specs_tab %}class="active"{% endif %}>
-                            <a href="{{ site.docsurl }}/architecture/en/{{ site.default_linked_docs_version }}/">Architecture Guides</a>
-                        </li>
-
-                        <li {% if page.appfw_tab %}class="active"{% endif %}>
-                            <a href="{{ site.docsurl }}/hardware/en/{{ site.default_linked_docs_version }}/">Hardware Support</a>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/getting_started/">Getting Started</a>
                         </li>
 
                         <li {% if page.specs_tab %}class="active"{% endif %}>
-                            <a href="{{ site.docsurl }}/devguides/en/{{ site.default_linked_docs_version }}/">Developer Guides</a>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/architecture/">Architecture Guides</a>
                         </li>
-                        
+
                         <li {% if page.appfw_tab %}class="active"{% endif %}>
-                            <a href="{{ site.docsurl }}/apis_services/en/{{ site.default_linked_docs_version }}/">APIs & Services</a>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}//hardware/">Hardware Support</a>
+                        </li>
+
+                        <li {% if page.specs_tab %}class="active"{% endif %}>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/devguides/">Developer Guides</a>
+                        </li>
+
+                        <li {% if page.appfw_tab %}class="active"{% endif %}>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/apis_services/">APIs & Services</a>
+                        </li>
+
+                        <li {% if page.appfw_tab %}class="active"{% endif %}>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/howto/">How To</a>
+                        </li>
+
+                        <li {% if page.appfw_tab %}class="active"{% endif %}>
+                            <a href="{{ site.docsurl }}/{{LANGUAGE}}/{{VERSION}}/reference/">Reference</a>
                         </li>
 					</ul>
 				</div>

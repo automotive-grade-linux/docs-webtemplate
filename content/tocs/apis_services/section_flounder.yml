@@ -1,103 +1,106 @@
 url_fetch  : "GERRIT_FETCH"
+git_commit : flounder
 
 name: APIs & Services
 template: generated_index.html
 books:
 -
-    id: app-framework-main-developer-guides
+    id: flounder-app-framework-main-developer-guides
     git_name: src/app-framework-main
     path: docs/api-services-book.yml
     dst_prefix: af-main
 -
-    id: app-framework-binder-developer-guides
+    id: flounder-app-framework-binder-developer-guides
     git_name: src/app-framework-binder
     path: docs/api-services-book.yml
     dst_prefix: af-binder
 -
-    id: app-afb-test-developer-guides
+    id: flounder-app-afb-test-developer-guides
     git_name: apps/app-afb-test
     path: docs/api-services-book.yml
     dst_prefix: afb-test
 -
-    id: docs-source-signaling
+    id: flounder-docs-source-signaling
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: automotive-grade-linux/docs-sources
     path: docs/signaling-book.yml
     dst_prefix: signaling
     books:
-        - id: agl-service-can-low-level-developer-guides
+        - id: flounder-agl-service-can-low-level-developer-guides
           git_name: apps/agl-service-can-low-level
           path: docs/api-services-book.yml
           dst_prefix: signaling
-        - id: high-level-developer-guides
+        - id: flounder-high-level-developer-guides
           url_fetch: GITHUB_FETCH
           url_edit: GITHUB_EDIT
+          git_commit: master
           git_name: iotbzh/high-level-viwi-service
           path: docs/api-services-book.yml
           dst_prefix: signaling
-        - id: agl-service-signal-composer-developer-guides
+        - id: flounder-agl-service-signal-composer-developer-guides
           git_name: apps/agl-service-signal-composer
           path: docs/api-services-book.yml
-        - id: devel-appfw-guidelines-2016
+        - id: flounder-devel-appfw-guidelines-2016
           path: https://iot.bzh/download/public/2016/signaling/AGL-AppFW-CAN-Signaling-Benchmark.pdf
           dst_prefix: iotbzh2016
           name: Developer Guidelines
-        - id: devel-message-guidelines-2016
+        - id: flounder-devel-message-guidelines-2016
           path: https://iot.bzh/download/public/2016/signaling/AGL-Message-Signaling-Developer-Guidelines.pdf
           dst_prefix: iotbzh2016
           name: CAN Signaling Benchmark
-        - id: candevstudio-developer-guides
+        - id: flounder-candevstudio-developer-guides
           url_fetch: GITHUB_FETCH
           url_edit: GITHUB_EDIT
+          git_commit: master
           git_name: iotbzh/agl-documentation
           path: candevstudio/docs/api-services-book.yml
           dst_prefix: candevstudio
-        - id: app-framework-developer-guides
+        - id: flounder-app-framework-developer-guides
           url_fetch: GITHUB_FETCH
           url_edit: AGL_GITHUB_EDIT
           git_name: automotive-grade-linux/docs-sources
           path: docs/app-framework-book.yml
           dst_prefix: af-binder
 -
-    id: audio-developer-guides
+    id: flounder-audio-developer-guides
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: automotive-grade-linux/docs-sources
     path: docs/audio-book.yml
     dst_prefix: audio
     books:
-        - id: pulseaudio-module-4a-developer-guides
+        - id: flounder-pulseaudio-module-4a-developer-guides
           git_name: src/pulseaudio-module-4a
           path: api-services-book.yml
           dst_prefix: audio
-        - id: agl-service-audio-4a-developer-guides
+        - id: flounder-agl-service-audio-4a-developer-guides
           git_name: apps/agl-service-audio-4a
           path: docs/api-services-book.yml
           dst_prefix: audio
 -
-    id: hmi-framework
+    id: flounder-hmi-framework
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: automotive-grade-linux/docs-sources
     path: docs/hmi-framework-book.yml
     dst_prefix: hmi-framework
     books:
-        - id: agl-service-homescreen-developer-guides
+        - id: flounder-agl-service-homescreen-developer-guides
           name: HMI Framework
           git_name: apps/agl-service-homescreen
           path: doc/api-services-book.yml
           dst_prefix: hmi-framework
-        - id: agl-service-windowmanager-developer-guides
+        - id: flounder-agl-service-windowmanager-developer-guides
           git_name: apps/agl-service-windowmanager
           path: doc/api-services-book.yml
           dst_prefix: hmi-framework
-        - id: agl-service-soundmanager-developer-guides
+        - id: flounder-agl-service-soundmanager-developer-guides
           git_name: apps/agl-service-soundmanager
           path: doc/api-services-book.yml
           dst_prefix: hmi-framework
 -
-    id: homescreen-developer-guides
+    id: flounder-homescreen-developer-guides
     git_name: apps/homescreen
     path: homescreen/docs/api-services-book.yml
     dst_prefix: hmi-framework
