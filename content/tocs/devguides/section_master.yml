@@ -1,5 +1,4 @@
 url_fetch  : "GERRIT_FETCH"
-git_commit : "AGL_GERRIT_BRANCH"
 
 name: Developers Guides
 template: generated_index.html
@@ -16,11 +15,6 @@ books:
     id: meta-agl-devel-guides
     git_name: AGL/meta-agl-devel
     path: docs/devguides-book.yml
-#-
-#    url_fetch: https://iot.bzh/download/public/2016/%source%
-#    dst_prefix: iotbzh2016
-#    documents:
-#        - source: appfw/03-AGL-AppFW-Privileges-Management.pdf
 -
     id: host-configuration-developer-guides
     url_fetch: GITHUB_FETCH
@@ -37,18 +31,34 @@ books:
     git_name: src/xds/xds-docs
     path: docs/devguides-book.yml
     dst_prefix: "xds"
-#-
-#    url_fetch: GITHUB_FETCH
-#    url_edit: GITHUB_EDIT
-#    git_name: baylibre/agl-docs-baylibre
-#    git_commit: master
-#    documents:
-#        - source: CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
-#        - source: CIAT/training/Hands_on_lab_documentation.pdf
+-
+    id: appfw-privileges-management
+    path: https://iot.bzh/download/public/2016/appfw/03-AGL-AppFW-Privileges-Management.pdf
+    dst_prefix: iotbzh2016
+    name: AppFW - Privileges Management
 -
     id: app-controller-submodule-guides
     git_name: apps/app-controller-submodule
     path: docs/devguides-book.yml
     dst_prefix: ctrler
-
-
+-
+    id: afb-helpers-function-references
+    git_name: src/libafb-helpers
+    path: docs/afb-helpers-book.yml
+    dst_prefix: afb-helpers
+-
+    id: continuous-integration-ciat
+    name: Continuous Integration - Automated Testing (CIAT)
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_name: automotive-grade-linux/docs-sources
+    path: docs/continuous-integration-book.yml
+    books:
+    -
+        id: how-to-write-test-1
+        path: https://github.com/BayLibre/agl-docs-baylibre/blob/%commit%/CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
+        name: How to write tests (overview slides)
+    -
+        id: how-to-write-test-2
+        path: https://github.com/BayLibre/agl-docs-baylibre/blob/%commit%/CIAT/training/Hands_on_lab_documentation.pdf
+        name: How to write tests (detailed)
