@@ -1,5 +1,4 @@
 url_fetch  : "GERRIT_FETCH"
-git_commit : "AGL_GERRIT_BRANCH"
 
 name: APIs & Services
 template: generated_index.html
@@ -21,9 +20,9 @@ books:
     dst_prefix: afb-test
 -
     id: docs-source-signaling
-    url_fetch: GITHUB_FETCH
-    url_edit: GITHUB_EDIT
-    git_name: docs-source
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_name: automotive-grade-linux/docs-sources
     path: docs/signaling-book.yml
     dst_prefix: signaling
     books:
@@ -58,7 +57,6 @@ books:
           url_fetch: GITHUB_FETCH
           url_edit: AGL_GITHUB_EDIT
           git_name: automotive-grade-linux/docs-sources
-          git_commit: sandbox/benierc/newdocs
           path: docs/app-framework-book.yml
           dst_prefix: af-binder
 -
@@ -66,7 +64,6 @@ books:
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: automotive-grade-linux/docs-sources
-    git_commit: sandbox/benierc/newdocs
     path: docs/audio-book.yml
     dst_prefix: audio
     books:
@@ -83,7 +80,6 @@ books:
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
     git_name: automotive-grade-linux/docs-sources
-    git_commit: sandbox/benierc/newdocs
     path: docs/hmi-framework-book.yml
     dst_prefix: hmi-framework
     books:
