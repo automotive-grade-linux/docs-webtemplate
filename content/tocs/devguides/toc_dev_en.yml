@@ -1,0 +1,258 @@
+#######################################################################
+# WARNING:
+#  - TOC should reference .HTML and .md (Index OK but Error 404)
+#  - do not forget to run 'docbuild --tocs' after any changes
+#
+#
+############################ SYNTAX ###################################
+# GLOBAL OPTIONS:
+#    name: TOC (page) title
+#    template: name of template to use for this page - use 'generated_index.html' if unknown
+#    children: array of TOC entries
+#
+# TOC Entry:
+#     name: TOC entry (level 1)
+#     children:
+#         -
+#            name: optional name for TOC entry (default: use URL FrontMatter info)
+#            url: <subdir as defined with FETCH_DIR in conf/AppDefaults.js:
+#         -
+#            name: ...
+#            url: ...
+#         ...
+#
+# EXAMPLE:
+# -------------------------------
+# name: Developer Guides
+# template: generated_index.html
+# children:
+# -
+#   name: Application Framework
+#   children:
+#       - url: reference/af-main/overview.html
+#       - url: reference/af-main/afm-system-daemon.html
+#       - url: reference/af-main/afm-user-daemon.html
+# -------------------------------
+#######################################################################
+
+name: Developer Guides
+template: generated_index.html
+children:
+-
+    name: AGL layers
+    children:
+        - url: reference/AGL.html
+        - url: reference/meta-agl.html
+        - url: reference/meta-agl-demo.html
+        - url: reference/meta-agl-devel.html
+-
+    name: Host Configuration
+    children:
+        -
+            name: Abstract
+            url: reference/host-configuration/docs/0_Abstract.html
+        -
+            name: Prerequisites
+            url: reference/host-configuration/docs/1_Prerequisites.html
+        -
+            name: AGL Application Framework
+            url: reference/host-configuration/docs/2_AGL_Application_Framework.html
+        -
+            name: Binding Build Example
+            url: reference/host-configuration/docs/3_Binding_Build_Example.html
+        -
+            name: AGL XDS
+            url: reference/host-configuration/docs/4_AGL_XDS.html
+        -
+            name: CanDevStudio
+            url: reference/host-configuration/docs/5_Candevstudio.html
+-
+    name: "Usage of CMake Afb Template module"
+    children:
+        -
+            name: "Abstract"
+            url: "reference/cmakeafbtemplates/0_Abstract.html"
+        -
+            name: "Quickstart"
+            url: "reference/cmakeafbtemplates/1_Quickstart.html"
+        -
+            name: "Project architecture"
+            url: "reference/cmakeafbtemplates/2_project_architecture.html"
+        -
+            name: "Advanced usage"
+            url: "reference/cmakeafbtemplates/3_advanced_usage.html"
+        -
+            name: "Advanced customization"
+            url: "reference/cmakeafbtemplates/4_advanced_customization.html"
+        -
+            name: "The autobuild script"
+            url: "reference/cmakeafbtemplates/5_autobuild.html"
+-
+    name: "X(cross) Development System: User's Guide"
+    children:
+        -
+          name: Getting Started
+          url: reference/xds/part-1/0_Abstract.html
+        -
+          name: Installing xds-server
+          children:
+              -
+                name: Installation
+                url: reference/xds/part-1/1_install-xds-server.html
+              -
+                name: Based on Docker container
+                url: reference/xds/part-1/1-1_install-xds-server-docker.html
+              -
+                name: Based on Virtual Machine appliance
+                url: reference/xds/part-1/1-2_install-xds-server-vm.html
+              -
+                name: Native installation
+                url: reference/xds/part-1/1-3_install-xds-server-native.html
+        -
+          name: Installing xds client tools
+          url: reference/xds/part-1/2_install-client.html
+        -
+          name: Installing AGL SDKs
+          url: reference/xds/part-1/3_install-sdks.html
+        -
+          name: Create your first AGL application
+          children:
+              -
+                name: Prerequisites
+                url: reference/xds/part-1/4_build-first-app.html
+              -
+                name: Setup
+                url: reference/xds/part-1/4-1_build-first-app-setup.html
+              -
+                name: Build using command line tool
+                url: reference/xds/part-1/4-2_build-first-app-cmd.html
+              -
+                name: Build using XDS Dashboard
+                url: reference/xds/part-1/4-3_build-first-app-dashboard.html
+              -
+                name: Build using a source code editor / IDE
+                url: reference/xds/part-1/4-4_build-first-app-ide.html
+        -
+          name: Debug your first AGL application
+          children:
+              -
+                name: Prerequisites
+                url: reference/xds/part-1/5_debug-first-app.html
+              -
+                name: Configuration
+                url: reference/xds/part-1/5-1_debug-first-app-config.html
+              -
+                name: xds-gdb from command line
+                url: reference/xds/part-1/5-2_debug-first-app-cmd.html
+              -
+                name: xds-gdb within an IDE
+                url: reference/xds/part-1/5-3_debug-first-app-ide.html
+
+-
+    name: "X(cross) Development System: Internals"
+    children:
+        -
+          name: Abstract
+          url: reference/xds/part-2/0_Abstract.html
+        -
+          name: Prerequisites
+          url: reference/xds/part-2/1_Prerequisites.html
+        -
+          name: XDS-server
+          children:
+              -
+                name: Abstract
+                url: reference/xds/part-2/1_xds-server/0_abstract.html
+              -
+                name: Build from scratch
+                url: reference/xds/part-2/1_xds-server/1_build.html
+              -
+                name: Configuration
+                url: reference/xds/part-2/1_xds-server/2_config.html
+              -
+                name: How to run
+                url: reference/xds/part-2/1_xds-server/3_how-to-run.html
+              -
+                name: Debugging
+                url: reference/xds/part-2/1_xds-server/4_debug.html
+              -
+                name: Test
+                url: reference/xds/part-2/1_xds-server/5_test.html
+        -
+          name: XDS-agent
+          children:
+              -
+                name: Abstract
+                url: reference/xds/part-2/2_xds-agent/0_abstract.html
+              -
+                name: Build from scratch
+                url: reference/xds/part-2/2_xds-agent/1_build.html
+              -
+                name: Configuration
+                url: reference/xds/part-2/2_xds-agent/2_config.html
+              -
+                name: Start
+                url: reference/xds/part-2/2_xds-agent/3_start.html
+              -
+                name: Debugging
+                url: reference/xds/part-2/2_xds-agent/4_debug.html
+        -
+          name: XDS-cli
+          children:
+              -
+                name: Abstract
+                url: reference/xds/part-2/3_xds-cli/0_abstract.html
+              -
+                name: Build from scratch
+                url: reference/xds/part-2/3_xds-cli/1_build.html
+              -
+                name: Configuration
+                url: reference/xds/part-2/3_xds-cli/2_config.html
+              -
+                name: CLI Commands
+                url: reference/xds/part-2/3_xds-cli/3_commands.html
+              -
+                name: Debugging
+                url: reference/xds/part-2/3_xds-cli/4_debug.html
+        -
+          name: XDS-gdb
+          children:
+              -
+                name: Abstract
+                url: reference/xds/part-2/4_xds-gdb/0_abstract.html
+              -
+                name: Build from scratch
+                url: reference/xds/part-2/4_xds-gdb/1_build.html
+              -
+                name: Configuration
+                url: reference/xds/part-2/4_xds-gdb/2_config.html
+              -
+                name: Debugging
+                url: reference/xds/part-2/4_xds-gdb/3_debug.html
+-
+    name: Guides
+    children:
+        -
+            name: AppFW - Privileges Management
+            url: reference/iotbzh2016/appfw/03-AGL-AppFW-Privileges-Management.pdf
+
+-
+    name: Controller Guide
+    children:
+          - url: reference/ctrler/controller.html
+          - url: reference/ctrler/controllerConfig.html
+          - url: reference/ctrler/Usage.html
+          - url: reference/ctrler/configSample.html
+
+-
+    name: "Continuous Integration - Automated Testing (CIAT)"
+    children:
+        -
+            name: Training
+            children:
+                -
+                    name:  "How to write tests (overview slides)"
+                    url: reference/CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
+                -
+                    name:  "How to write tests (detailed)"
+                    url: reference/CIAT/training/Hands_on_lab_documentation.pdf
