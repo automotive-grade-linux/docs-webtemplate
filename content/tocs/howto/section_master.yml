@@ -2,3 +2,11 @@ url_fetch  : "GERRIT_FETCH"
 
 name: How To
 template: generated_index.html
+books:
+-
+    id: howto-add-docs
+    url_fetch: GITHUB_FETCH
+    url_edit: GITHUB_EDIT
+    git_name: automotive-grade-linux/docs-sources
+    path: docs/handle-docs-book.yml
+
