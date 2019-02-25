@@ -3,7 +3,6 @@
 
 # 302 (temporary) renames of versions
 version-renames:
-    "master": "dev"
     "1.0": "1.x"
     "2.0": "2.x"
     "2.0.1": "2.x"
