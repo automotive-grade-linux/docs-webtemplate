@@ -7,7 +7,7 @@ books:
     id: howto-add-docs
     url_fetch: GITHUB_FETCH
     url_edit: GITHUB_EDIT
-    git_commit: master
+    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/handle-docs-book.yml
 

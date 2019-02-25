@@ -7,7 +7,7 @@ books:
     id: flounder-image-development-workflow
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_commit: master
+    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/getting-started-book.yml
 -

@@ -51,6 +51,7 @@ books:
     name: Continuous Integration - Automated Testing (CIAT)
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
+    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/continuous-integration-book.yml
     books:
