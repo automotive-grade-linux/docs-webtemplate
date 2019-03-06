@@ -7,14 +7,15 @@ books:
     id: meta-agl-developer-guides
     git_name: AGL/meta-agl
     path: docs/devguides-book.yml
--
-    id: meta-agl-demo-guides
-    git_name: AGL/meta-agl-demo
-    path: docs/devguides-book.yml
--
-    id: meta-agl-devel-guides
-    git_name: AGL/meta-agl-devel
-    path: docs/devguides-book.yml
+    appendBooks:
+    -
+        id: meta-agl-demo-guides
+        git_name: AGL/meta-agl-demo
+        path: docs/devguides-book.yml
+    -
+        id: meta-agl-devel-guides
+        git_name: AGL/meta-agl-devel
+        path: docs/devguides-book.yml
 -
     id: host-configuration-developer-guides
     url_fetch: GITHUB_FETCH
