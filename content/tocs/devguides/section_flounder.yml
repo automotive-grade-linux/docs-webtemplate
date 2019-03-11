@@ -8,7 +8,7 @@ books:
     id: meta-agl-developer-guides-flounder
     git_name: AGL/meta-agl
     path: docs/devguides-book.yml
-    appendBooks:
+    brotherBooks:
     -
         id: meta-agl-demo-guides-flounder
         git_name: AGL/meta-agl-demo
