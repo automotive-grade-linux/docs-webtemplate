@@ -1,7 +1,6 @@
 url_fetch  : "GERRIT_FETCH"
 # FIXME: restore line below to switch back on master:
 #git_commit : "AGL_GERRIT_BRANCH"
-git_commit : "sandbox/benierc/newdocs"
 
 name: Developer Guides
 template: generated_index.html
@@ -14,6 +13,7 @@ books:
     id: security_blueprint
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
+    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     dst_prefix: security
     path: docs/security-blueprint-book.yml
