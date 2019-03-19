@@ -8,13 +8,18 @@ LOCALFETCH=.LocalFetch.ts
 all: help
 
 help:
-	@echo "Usage:"
-	@echo "- make clean: clean all generated files"
-	@echo "- make fetch: fetch the site if necessary"
-	@echo "- make localFetch: fetch the site if necessary but use local file."
-	@echo "- make build: build the site"
-	@echo "- make push: push the built site"
-	@echo "- make serve: serve the site"
+	@echo -e "Usage:"
+	@echo -e "- make clean: clean all generated files"
+	@echo -e "- make fetch VERSIONS=[VERSION,...] SECTIONS=[SECTION,...]: fetch the site if necessary "
+	@echo -e "- make localFetch VERSIONS=[VERSION,...] SECTIONS=[SECTION,...]: fetch the site if necessary but use local file."
+	@echo -e "- make build VERSIONS=[VERSION,...] SECTIONS=[SECTION,...]: build the site"
+	@echo -e "- make push  VERSIONS=[VERSION,...] SECTIONS=[SECTION,...]: push the built site"
+	@echo -e "- make serve VERSIONS=[VERSION,...] SECTIONS=[SECTION,...]: serve the site"
+	@echo -e
+	@echo -e "VERSIONS="
+	@echo -e "\t represents the desired versions, separated with ,"
+	@echo -e "SECTIONS="
+	@echo -e "\t represents the desired sections, separated with ,"
 
 .PHONY: clean
 clean:
@@ -28,7 +33,7 @@ $(LOCALFETCH): $(wildcard content/toc/*/fetched_files.yml)
 	touch $@
 
 $(FETCHTS): $(wildcard content/toc/*/fetched_files.yml)
-	$(DOCBUILD) $(VERBOSE) $(LOCAL_FETCHTS) --fetch --force
+	$(DOCBUILD) $(VERBOSE) $(LOCAL_FETCHTS) --fetch --force --versions=$(VERSIONS) --sections=$(SECTIONS)
 	touch $@
 
 .PHONY: fetch
