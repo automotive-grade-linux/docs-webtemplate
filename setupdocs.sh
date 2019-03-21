@@ -51,13 +51,15 @@ Usage: $PROGNAME [OPTIONS]... [DIRECTORY]
                                           REFERENCE can be a branch, a tag, a commit
     -w, --webtemplate-ref=[REFERENCE]    webtemplates reference;
                                           REFERENCE can be a branch, a tag, a commit
+    -b, --baseurl=[DST]                   baseurl of the site, defaut is empty
+                                          DST must start with /
 EOF
     exit 1
 }
 
 
-SHORTOPTS="w:t:d:h"
-LONGOPTS="webtemplate-ref:,doctools-ref:,directory:,debug,help"
+SHORTOPTS="w:t:d:h:b:"
+LONGOPTS="webtemplate-ref:,doctools-ref:,baseurl:,directory:,debug,help"
 ARGS=$(getopt -s bash --options $SHORTOPTS  \
   --longoptions $LONGOPTS --name $PROGNAME -- "$@" )
 if [ ! $? -eq 0 ]; then
@@ -73,6 +75,8 @@ while [ "$#" -gt "1" ]; do
             ref_doctools=$2; shift 2;;
         -d|--directory)
             DESTINATION=$2;shift 2;;
+        -b|--baseurl)
+            baseurl=$2;shift 2;;
         --debug)
             DEBUG=0;shift 2;;
         -h|--help)
@@ -111,9 +115,12 @@ debug "GITREF=$GITREF and rev=$rev"
     && { error "Invalid reference between $ref_docswebtemplate and local repo in $DESTINATION"; exit 5; }
 #processing cloning or update
 if [ -z $GITREF ]; then
-    echo "Cloning docwebtemplates and doctools in $DESTINATION"
+    echo "Cloning docwebtemplates and doctools in $DESTINATION with baseurl=${baseurl}"
     gitclone $docswebtemplates .
     gitcheckout $ref_docswebtemplate
+    if [ ! -z ${baseurl} ]; then
+        sed -i "s|^baseurl:.*$|baseurl: \"${baseurl}\"|g" conf/_dev.yml
+    fi
     gitclone $doctools $DOCTOOLSDIR
     pushd $DOCTOOLSDIR
     gitcheckout $ref_doctools
