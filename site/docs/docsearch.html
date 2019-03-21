@@ -5,13 +5,13 @@
 <html lang="{% if page.language %}{{ page.language }}{% else %}{{ site.language }}{% endif %}">
 {% include head.html %}
 <body>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/getting_started/">Getting started</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/hardware/">Hardware Support</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/architecture/">Architecture Guides</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/devguides/">Developer Guides</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/apis_services/">APIs & Services</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/howto/">How To</a></h3>
-     <h3><a href="{{ site.docsurl }}/en/{{ site.default_linked_docs_version }}/reference/">Reference</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/getting_started/">Getting started</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/hardware/">Hardware Support</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/architecture/">Architecture Guides</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/devguides/">Developer Guides</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/apis_services/">APIs & Services</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/howto/">How To</a></h3>
+     <h3><a href="{{ site.baseurl }}/docs/en/{{ site.default_linked_docs_version }}/reference/">Reference</a></h3>
     {% include algolia.html %}
 </body>
 </html>
