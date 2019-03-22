@@ -3,7 +3,7 @@ layout: base
 docs_tab: true
 analytics_id: {{site.ganalytics}}
 
-scripts: 
+scripts:
   - lib/raphael-min.js
   - lib/underscore-min.js
   - lib/sequence-diagram-min.js
@@ -15,7 +15,8 @@ scripts:
 set some constants
 {% endcomment %}
 {% assign ALL_PAGES = site.data.all-pages %}
-{% assign DOCSDIR = site.docsurl %}
+{% assign DOCSDIR = site.baseurl %}
+{% capture DOCSDIR %}{{DOCSDIR}}{{ site.docsurl }}{% endcapture %}
 {% assign TOCSDIR = site.data.tocs %}
 {% assign TOCFILE = TOCSDIR[page.tocdir][page.tocfile] %}
 

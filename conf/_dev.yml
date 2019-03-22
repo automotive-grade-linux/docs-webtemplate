@@ -1,4 +1,4 @@
-baseurl: ""
+baseurl: "/next"
 default_linked_docs_version: master
 destination: build-dev
 exclude:
