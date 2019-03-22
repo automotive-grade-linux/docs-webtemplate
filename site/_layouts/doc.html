@@ -15,8 +15,7 @@ scripts:
 set some constants
 {% endcomment %}
 {% assign ALL_PAGES = site.data.all-pages %}
-{% assign DOCSDIR = site.baseurl %}
-{% capture DOCSDIR %}{{DOCSDIR}}{{ site.docsurl }}{% endcapture %}
+{% capture DOCSDIR %}{{ site.baseurl }}{{ site.docsurl }}{% endcapture %}
 {% assign TOCSDIR = site.data.tocs %}
 {% assign TOCFILE = TOCSDIR[page.tocdir][page.tocfile] %}
 
