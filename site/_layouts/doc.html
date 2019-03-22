@@ -3,7 +3,7 @@ layout: base
 docs_tab: true
 analytics_id: {{site.ganalytics}}
 
-scripts: 
+scripts:
   - lib/raphael-min.js
   - lib/underscore-min.js
   - lib/sequence-diagram-min.js
@@ -15,12 +15,12 @@ scripts:
 set some constants
 {% endcomment %}
 {% assign ALL_PAGES = site.data.all-pages %}
-{% assign DOCSDIR = site.docsurl %}
+{% capture DOCSDIR %}{{ site.baseurl }}{{ site.docsurl }}{% endcapture %}
 {% assign TOCSDIR = site.data.tocs %}
 {% assign TOCFILE = TOCSDIR[page.tocdir][page.tocfile] %}
 
 {% capture VERSION_ROOT %}{{DOCSDIR}}/{{ page.language }}/{{ page.version }}/{{page.tocdir}}/{% endcapture %}
-{% capture VERSION_URL %}{{DOCSDIR}}/{{ page.language }}/{{ page.version }}/{% endcapture %}
+{% capture VERSION_URL %}{{ site.docsurl }}/{{ page.language }}/{{ page.version }}/{% endcapture %}
 {% capture LANGUAGE_ROOT %}{{DOCSDIR}}/{{ page.language }}/{% endcapture %}
 
 {% assign MY_ENTRY = page.url | replace: VERSION_ROOT,""  %}
@@ -202,7 +202,7 @@ set some constants
                                      This page might not exist in the target version because page
                                      layouts change from version to version
                                 {% endcomment %}
-                                {% capture other_version_root %}/docs/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
+                                {% capture other_version_root %}{{site.docsurl}}/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
                                 {% assign other_version_url = page.url | replace:VERSION_URL,other_version_root %}
 
                                 {% comment %}
