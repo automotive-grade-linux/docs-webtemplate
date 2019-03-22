@@ -202,7 +202,7 @@ set some constants
                                      This page might not exist in the target version because page
                                      layouts change from version to version
                                 {% endcomment %}
-                                {% capture other_version_root %}/docs/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
+                                {% capture other_version_root %}/{{site.baseurl}}{{site.docsurl}}/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
                                 {% assign other_version_url = page.url | replace:VERSION_URL,other_version_root %}
 
                                 {% comment %}
