@@ -126,8 +126,8 @@ else
     if [ -d $DOCTOOLSDIR ]; then
         echo "$DOCTOOLSDIR already exits: process update with reference=$ref_doctools"
         pushd $DOCTOOLSDIR
-        gitcheckout $branch_doctools
-        git pull $doctools $branch_doctools &> /dev/null
+        gitcheckout $ref_doctools
+        git pull $doctools $ref_doctools &> /dev/null
         npm install
         popd
     else
