@@ -38,6 +38,7 @@ config = {
 	// alternate url using cgit
 	GERRIT_FETCH: "https://git.automotivelinux.org/%repo%/plain/%source%?h=%commit%",
 	AGL_GERRIT_BRANCH : "master",
+	AGL_GITHUB_BRANCH : "master-next",
 
 	LAST: undefined
 };

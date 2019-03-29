@@ -39,7 +39,7 @@ name: Developer Guides
 template: generated_index.html
 children:
 -
-    name: Yocto layers
+    name: AGL layers
     children:
         - url: reference/AGL.html
         - url: reference/meta-agl.html

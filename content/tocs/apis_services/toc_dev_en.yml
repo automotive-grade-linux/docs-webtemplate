@@ -39,6 +39,11 @@ name: Developer Guides
 template: generated_index.html
 children:
 -
+    name: API Reference
+    children:
+        - url: reference/af-main/0-kristi-introduction.html
+
+-
     name: Application Framework
     children:
         - url: reference/af-main/0-introduction.html

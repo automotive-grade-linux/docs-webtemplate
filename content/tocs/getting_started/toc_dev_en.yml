@@ -1,9 +1,9 @@
 #######################################################################
-# WARNING: 
+# WARNING:
 #  - TOC should reference .HTML and .md (Index OK but Error 404)
-#  - do not forget to run 'docbuild --tocs' after any changes 
+#  - do not forget to run 'docbuild --tocs' after any changes
 #
-# 
+#
 ############################ SYNTAX ###################################
 # GLOBAL OPTIONS:
 #    name: TOC (page) title
@@ -13,7 +13,7 @@
 # TOC Entry:
 #     name: TOC entry (level 1)
 #     children:
-#         - 
+#         -
 #            name: optional name for TOC entry (default: use URL FrontMatter info)
 #            url: <subdir as defined with FETCH_DIR in conf/AppDefaults.js:
 #         -
@@ -39,13 +39,21 @@ name: Getting started
 template: generated_index.html
 children:
 -
-    name: Getting Started
+    name: Welcome!
     children:
-        - url: reference/source-code.html
-        - url: reference/customize_bitbake_conf.html
+        - url: reference/getting-started-welcome.html
+-
+    name: Developing an AGL Image
+    children:
+        - url: reference/image-workflow-intro.html
+        - url: reference/image-workflow-prep-host.html
+        - url: reference/image-workflow-download-sw.html
+        - url: reference/image-workflow-initialize-build-environment.html
+        - url: reference/image-workflow-cust-build.html
+        - url: reference/image-workflow-build.html
         - url: reference/machines/intel.html
         - url: reference/machines/qemu.html
-        - url: reference/machines/R-Car-Starter-Kit-gen3.html
+        - url: reference/machines/renesas.html
         - url: reference/machines/raspberrypi.html
 -
     name: HomeScreen
@@ -55,10 +63,23 @@ children:
     name: Troubleshooting
     children:
         - url: reference/troubleshooting.html
-        - url: reference/footers/intel-footer.html
-        - url: reference/footers/raspberrypi-footer.html
 -
-    name: SDK
+    name: Setting Up a Docker Container
     children:
-        - url: reference/setup-sdk-environment.html
-
+        - url: reference/docker-container-setup.html
+-
+#    name: Scott's new section so far
+#    children:
+#        - url: reference/scott.html
+#-
+    name: Developing an Application
+    children:
+        - url: reference/app-workflow-intro.html
+        - url: reference/app-workflow-image.html
+        - url: reference/app-workflow-sdk.html
+        - url: reference/app-workflow-bootables.html
+        - url: reference/app-workflow-boot.html
+        - url: reference/app-workflow-prep-app.html
+        - url: reference/app-workflow-build-app.html
+        - url: reference/app-workflow-deploy-app.html
+        - url: reference/app-workflow-debug-app.html

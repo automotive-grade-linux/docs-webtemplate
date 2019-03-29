@@ -1,0 +1,18 @@
+url_fetch  : "GERRIT_FETCH"
+# FIXME: restore line below to switch back on master:
+#git_commit : "AGL_GERRIT_BRANCH"
+
+name: Developer Guides
+template: generated_index.html
+books:
+-
+        id: agl-specifications
+        path: https://wiki.automotivelinux.org/_media/agl_spec_v1.0_final.pdf
+        name: AGL Requirements Specifications
+-
+    id: security_blueprint
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_name: automotive-grade-linux/docs-sources
+    dst_prefix: security
+    path: docs/security-blueprint-book.yml
