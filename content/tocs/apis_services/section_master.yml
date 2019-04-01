@@ -4,6 +4,13 @@ name: APIs & Services
 template: generated_index.html
 books:
 -
+    id: api-reference-intro
+    url_fetch: AGL_GITHUB_FETCH
+    url_edit: AGL_GITHUB_EDIT
+    git_commit: master-next
+    git_name: automotive-grade-linux/docs-sources
+    path: docs/api-reference-book.yml
+-
     id: app-framework-main-developer-guides
     git_name: src/app-framework-main
     path: docs/api-services-book.yml
