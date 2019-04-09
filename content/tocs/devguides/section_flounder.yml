@@ -22,13 +22,12 @@ books:
     url_fetch: GITHUB_FETCH
     url_edit: GITHUB_EDIT
     git_name: iotbzh/agl-documentation
-    git_commit: master
     path: host-configuration/docs/devguides-book.yml
 -
     id: app-templates-guides-flounder
     git_name: apps/app-templates
     path: docs/devguides-book.yml
-    dst_prefix: "2_4-Use-app-templates.md"
+    dst_prefix: "2_4-Use-app-templates"
 -
     id: xds-docs-guides-flounder
     git_name: src/xds/xds-docs
@@ -63,5 +62,4 @@ books:
         path: https://github.com/BayLibre/agl-docs-baylibre/blob/%commit%/CIAT/training/Hands_on_lab_documentation.pdf
         git_commit: master
         name: How to write tests (detailed)
-
 
