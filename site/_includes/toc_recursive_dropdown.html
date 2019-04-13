@@ -8,6 +8,6 @@
 </li>
 {% endif %}
 {% if entry.children %}
-{% include toc_recursive_dropdown.html entries=entry.children my_entry=include.my_entry version_root=version_root %}
+{% include toc_recursive_dropdown.html entries=entry.children my_entry=include.my_entry version_root=include.version_root %}
 {% endif %}
 {% endfor %}
