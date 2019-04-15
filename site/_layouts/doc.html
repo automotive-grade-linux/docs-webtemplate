@@ -205,6 +205,8 @@ set some constants
                                 {% capture other_version_root %}{{site.docsurl}}/{{ page.language }}/{{ other_version_string }}/{% endcapture %}
                                 {% assign other_version_url = page.url | replace:VERSION_URL,other_version_root %}
 
+                                {% assign other_version_url =  VERSION_ROOT | replace: page.version, other_version_string %}
+
                                 {% comment %}
                                 {% unless ALL_PAGES contains other_version_url %}
                                     {% assign other_version_url = other_version_root %}
