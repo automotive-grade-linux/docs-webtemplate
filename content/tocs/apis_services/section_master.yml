@@ -7,7 +7,6 @@ books:
     id: api-reference-intro
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/api-reference-book.yml
 -
@@ -29,7 +28,6 @@ books:
     id: docs-source-signaling
     url_fetch: AGL_GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/signaling-book.yml
     dst_prefix: signaling
@@ -48,7 +46,6 @@ books:
           order: 80
           url_fetch: GITHUB_FETCH
           url_edit: AGL_GITHUB_EDIT
-          git_commit: master-next
           git_name: automotive-grade-linux/docs-sources
           path: docs/app-framework-book.yml
           dst_prefix: af-binder
@@ -77,7 +74,6 @@ books:
     id: audio-developer-guides
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/audio-book.yml
     dst_prefix: audio
@@ -94,7 +90,6 @@ books:
     id: hmi-framework
     url_fetch: GITHUB_FETCH
     url_edit: AGL_GITHUB_EDIT
-    git_commit: master-next
     git_name: automotive-grade-linux/docs-sources
     path: docs/hmi-framework-book.yml
     dst_prefix: hmi-framework
