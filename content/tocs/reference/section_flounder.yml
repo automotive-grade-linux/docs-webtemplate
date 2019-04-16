@@ -1,0 +1,4 @@
+url_fetch  : "GERRIT_FETCH"
+
+name: Reference
+template: generated_index.html
