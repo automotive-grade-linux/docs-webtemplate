@@ -12,7 +12,7 @@ url:            "http://docs.automotivelinux.org" # the base hostname & protocol
 description:    AGL (Automotive Grade Linux) Developer Website
 
 baseurl:        "" # the subpath of the site, e.g. /blog; NOTE: no trailing slash
-docsurl:        "/docs" # docsearch entry point 
+docsurl:        "/docs" # docsearch entry point
 rss_path:       /misc/feed.xml
 
 copyright_date: "2015-2018"
@@ -46,18 +46,19 @@ urls:
 logo:
     navbar  :  /static/img/branding/agl_title_793x211.png
     full    :  /static/img/branding/agl_827x576.png
-    
+    underconstruction: /static/img/under-construction.png
+
 message:
     indev : "Draft version of documentation under development may change!"
-    
-ganalytics: xxxxxxxx    
+
+ganalytics: xxxxxxxx
 
 # NOTE:
 #      this value gets overwritten in _defaults.yml, which is a generated file
 defaults:
 
 # =======
-# Build settings 
+# Build settings
 # =======
 source:      www           # overloaded by AppDefaults.js
 destination: build-dev     # overloaded by AppDefaults.js
@@ -75,17 +76,17 @@ kramdown:
     hard_wrap: false
     syntax_highlighter: rouge
     toc_levels: "2,3"
-    
+
 graph: # ~~~ UML-style-class
-    def_style: simple 
-    tag_uml  : UML 
+    def_style: simple
+    tag_uml  : UML
     tag_flow : FLOW
     debug    : false
-    
+
 # exclude these directories from the build
 exclude:
     - static/css-src
-    
+
 algolia: # https://community.algolia.com/docsearch/
     index : "automotivelinux"
     apikey: "edd30bcff9f6df4b095c41cba3e5a418"
@@ -93,15 +94,15 @@ algolia: # https://community.algolia.com/docsearch/
 #disqus: # check https://disqus.com/admin
 #    name: "docsiotbzh"
 #    devmode: 0
-    
+
 twitter:
     hashtag: autogradelinux
     widgetid: 629424968011386884
-    
+
 irc:
     host: https://webchat.freenode.net/
     channel: "#automotive"
-    
+
 linkto:
     askbot      : https://ask.automotivelinux.org/
     account     : https://identity.linuxfoundation.org/
@@ -110,5 +111,5 @@ linkto:
     jira_issues : https://jira.automotivelinux.org/issues/?jql=project%3DSPEC
     code_contrib: https://git.automotivelinux.org/gerrit/#/q/status:open
     mail_lists  : https://lists.linuxfoundation.org/mailman/listinfo/automotive-discussions
-    
-    
+
+
