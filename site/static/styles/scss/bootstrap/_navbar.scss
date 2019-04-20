@@ -60,6 +60,8 @@
     overflow-y: auto;
   }
 
+  .nav_bar_right { display: none; }
+
   @media (min-width: $grid-float-breakpoint) {
     width: auto;
     border-top: 0;
@@ -75,6 +77,10 @@
     &.in {
       overflow-y: visible;
     }
+
+  @media (min-width: $screen-lg-min) {
+      .nav_bar_right { display: block; }
+  }
 
     // Undo the collapse side padding for navbars with containers to ensure
     // alignment of right-aligned contents.
