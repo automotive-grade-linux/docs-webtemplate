@@ -1,6 +1,11 @@
 DOCBUILD=doctools/docbuild
 
-VERBOSE=--verbose
+ifeq ($(V),1)
+	VERBOSE_OPT=--verbose
+endif
+ifeq ($(VERBOSE),1)
+	VERBOSE_OPT=--verbose
+endif
 
 FETCHTS=.fetch.ts
 LOCALFETCH=.LocalFetch.ts
@@ -24,17 +29,17 @@ help:
 
 .PHONY: clean
 clean:
-	$(DOCBUILD) $(VERBOSE) --clean
+	$(DOCBUILD) $(VERBOSE_OPT) --clean
 	rm -f $(FETCHTS)
 	rm -f $(LOCALFETCH)
 
 $(LOCALFETCH): $(wildcard content/toc/*/fetched_files.yml)
-	$(DOCBUILD) $(VERBOSE) --localFetch --fetch --force
+	$(DOCBUILD) $(VERBOSE_OPT) --localFetch --fetch --force
 	touch $(FETCHTS)
 	touch $@
 
 $(FETCHTS): $(wildcard content/toc/*/fetched_files.yml)
-	$(DOCBUILD) $(VERBOSE) $(LOCAL_FETCHTS) --fetch --force --versions=$(VERSIONS) --sections=$(SECTIONS)
+	$(DOCBUILD) $(VERBOSE_OPT) $(LOCAL_FETCHTS) --fetch --force --versions=$(VERSIONS) --sections=$(SECTIONS)
 	touch $@
 
 .PHONY: fetch
@@ -47,15 +52,15 @@ localFetch: $(LOCALFETCH) $(FETCHTS)
 
 .PHONY: build
 build: $(FETCHTS)
-	$(DOCBUILD) $(VERBOSE) --build
+	$(DOCBUILD) $(VERBOSE_OPT) --build
 
 .PHONY: push
 push: $(FETCHTS)
-	$(DOCBUILD) $(VERBOSE) --build --push
+	$(DOCBUILD) $(VERBOSE_OPT) --build --push
 
 .PHONY: serve
 serve: $(FETCHTS)
-	$(DOCBUILD) $(VERBOSE) --build --serve
+	$(DOCBUILD) $(VERBOSE_OPT) --build --serve
 
 .PHONY: linkchecker
 linkchecker: $(FETCHS)
