@@ -57,7 +57,8 @@ Registered users in gerrit without any of the above access levels may fetch the 
 
 #### Patch Review and Merge Policy
 
-In addition to providing comments and suggestions for improvement, reviewers are encouraged to respond to changes with an overall +1, -1 type value. The meaning of these numbers is explained in the [https://gerrit.baserock.org/Documentation/config-labels.html#label_Code-Review](Gerrit documentation)
+In addition to providing comments and suggestions for improvement, reviewers are encouraged to respond to changes with an overall +1, -1 type value. The meaning of these numbers is explained in the
+[Gerrit documentation](https://gerrit.automotivelinux.org/gerrit/Documentation/config-labels.html).
 
 Here is a brief summary of the values:
 
