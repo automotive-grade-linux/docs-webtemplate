@@ -1,4 +1,5 @@
 url_fetch  : "GERRIT_FETCH"
+git_commit : "guppy"
 
 name: Developers Guides
 template: generated_index.html
