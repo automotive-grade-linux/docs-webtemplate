@@ -58,7 +58,6 @@ books:
         - id: flounder-high-level-developer-guides
           url_fetch: GITHUB_FETCH
           url_edit: GITHUB_EDIT
-          git_commit: master
           git_name: iotbzh/high-level-viwi-service
           path: docs/api-services-book.yml
           dst_prefix: signaling
