@@ -60,10 +60,10 @@ books:
     -
         id: how-to-write-test-1
         git_commit: master
-        path: https://github.com/BayLibre/agl-docs-baylibre/blob/%commit%/CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
+        path: https://raw.githubusercontent.com/BayLibre/agl-docs-baylibre/master/CIAT/training/How_to_write_your_own_tests_for_AGL.pdf
         name: How to write tests (overview slides)
     -
         id: how-to-write-test-2
         git_commit: master
-        path: https://github.com/BayLibre/agl-docs-baylibre/blob/%commit%/CIAT/training/Hands_on_lab_documentation.pdf
+        path: https://raw.githubusercontent.com/BayLibre/agl-docs-baylibre/master/CIAT/training/Hands_on_lab_documentation.pdf
         name: How to write tests (detailed)
