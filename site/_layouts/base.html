@@ -8,7 +8,7 @@ analytics_id: {{ site.ganalytics }}
 <body>
     {{ content }}
     <script defer type="text/javascript" src="{{ site.baseurl }}/static/js/twitter.js"></script>
-    {% include algolia.html %}
+    <!-- {% include algolia.html %} -->
             
     {% for script in layout.scripts %}
         <script defer src="{{ site.baseurl }}/static/js/{{script}}"></script>
