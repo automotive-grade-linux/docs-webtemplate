@@ -15,7 +15,7 @@ baseurl:        "" # the subpath of the site, e.g. /blog; NOTE: no trailing slas
 docsurl:        "/docs" # docsearch entry point
 rss_path:       /misc/feed.xml
 
-copyright_date: "2015-2018"
+copyright_date: "2015-2019"
 
 excerpt_separator: <!--more-->
 
@@ -51,7 +51,7 @@ logo:
 message:
     indev : "Draft version of documentation under development may change!"
 
-ganalytics: xxxxxxxx
+#ganalytics: xxxxxxxx
 
 # NOTE:
 #      this value gets overwritten in _defaults.yml, which is a generated file
@@ -87,9 +87,9 @@ graph: # ~~~ UML-style-class
 exclude:
     - static/css-src
 
-algolia: # https://community.algolia.com/docsearch/
-    index : "automotivelinux"
-    apikey: "edd30bcff9f6df4b095c41cba3e5a418"
+#algolia: # https://community.algolia.com/docsearch/
+#    index : "automotivelinux"
+#    apikey: "edd30bcff9f6df4b095c41cba3e5a418"
 
 #disqus: # check https://disqus.com/admin
 #    name: "docsiotbzh"
