@@ -1,0 +1,5 @@
+url_fetch  : "GERRIT_FETCH"
+git_commit : "halibut"
+
+name: How To
+template: generated_index.html
