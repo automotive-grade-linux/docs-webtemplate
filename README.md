@@ -35,9 +35,9 @@ Other configuration files in conf/ starting by an underscore (_) are used by Jek
 ## generate a 1st site from your template
 
 ```bash
- ./doctools/webdocs/docbuild --clean  # deleted all generated file if any
- ./doctools/webdocs/docbuild --fetch [--force]  # collect doc from github (fetch list in content/toc/*/fetch_files.yml)
- ./doctools/webdocs/docbuild --build --serve --watch --incremental # build config/tocs, generate html and start a local webserver
+ ./doctools/docbuild --clean  # deleted all generated file if any
+ ./doctools/docbuild --fetch [--force]  # collect doc from github (fetch list in content/toc/*/fetch_files.yml)
+ ./doctools/docbuild --build --serve --watch --incremental # build config/tocs, generate html and start a local webserver
 
  xdg-open http://localhost:4000
 
