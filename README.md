@@ -3,7 +3,6 @@
 This repository contains AGL documentation website template, rendering is visible at http://docs.automotivelinux.org
 This website relies on the generator located in [docs-tools](https://github.com/automotive-grade-linux/docs-tools)
 
-TODO: old documentation below. Should be rewritten to match new git repo scheme.
 
 # Installing
 
@@ -35,13 +34,14 @@ Other configuration files in conf/ starting by an underscore (_) are used by Jek
 ## generate a 1st site from your template
 
 ```bash
- ./doctools/webdocs/docbuild --clean  # deleted all generated file if any
- ./doctools/webdocs/docbuild --fetch [--force]  # collect doc from github (fetch list in content/toc/*/fetch_files.yml)
- ./doctools/webdocs/docbuild --build --serve --watch --incremental # build config/tocs, generate html and start a local webserver
+ ./doctools/docbuild --clean  # deleted all generated file if any
+ ./doctools/docbuild --fetch [--force]  # collect doc from github (fetch list in content/toc/*/fetch_files.yml)
+ ./doctools/docbuild --build --serve --watch --incremental # build config/tocs, generate html and start a local webserver
+ 
 
  xdg-open http://localhost:4000
 
- ./doctools/webdocs/docbuild --push --verbose # push generated to production webserver (check conf/AppDefault 1st)
+ ./doctools/docbuild --push --verbose # push generated to production webserver (check conf/AppDefault 1st)
 ```
 
 Alternatively, a Makefile can be used and defines the most common operations:
