@@ -110,6 +110,6 @@ linkto:
     jira_project: https://jira.automotivelinux.org/browse/SPEC/?selectedTab=com.atlassian.jira.jira-projects-plugin:summary-panel
     jira_issues : https://jira.automotivelinux.org/issues/?jql=project%3DSPEC
     code_contrib: https://git.automotivelinux.org/gerrit/#/q/status:open
-    mail_lists  : https://lists.linuxfoundation.org/mailman/listinfo/automotive-discussions
+    mail_lists  : https://lists.automotivelinux.org/g/agl-main
 
 
