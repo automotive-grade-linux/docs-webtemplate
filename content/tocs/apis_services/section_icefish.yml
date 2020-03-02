@@ -1,5 +1,5 @@
 url_fetch  : "GERRIT_FETCH"
-git_commit : "master"
+git_commit : "icefish"
 
 name: APIs & Services
 template: generated_index.html
@@ -64,8 +64,8 @@ books:
           path: docs/api-services-book.yml
         - id: candevstudio-developer-guides
           order: 70
-          url_fetch: AGL_GITHUB_FETCH
-          url_edit: AGL_GITHUB_EDIT
+          url_fetch: GITHUB_FETCH
+          url_edit: GITHUB_EDIT
           git_name: automotive-grade-linux/docs-sources
           path: agl-documentation/candevstudio/docs/api-services-book.yml
           dst_prefix: candevstudio
