@@ -9,7 +9,7 @@
     -   project: AGL-repo
         gerrit: https://gerrit.automotivelinux.org/gerrit/#/admin/projects/AGL/AGL-repo
     -   project: Docs AGL
-        mirror: https://github.com/automotive-grade-linux/docs-agl
+        mirror: https://github.com/automotive-grade-linux/docs-sources
 
 -   title: AGL-Extra
     projects:
