@@ -76,15 +76,6 @@ books:
     git_name: automotive-grade-linux/docs-sources
     path: docs/audio-book.yml
     dst_prefix: audio
-    books:
-        - id: pulseaudio-module-4a-developer-guides
-          git_name: src/pulseaudio-module-4a
-          path: api-services-book.yml
-          dst_prefix: audio
-        - id: agl-service-audio-4a-developer-guides
-          git_name: apps/agl-service-audio-4a
-          path: docs/api-services-book.yml
-          dst_prefix: audio
 -
     id: hmi-framework
     url_fetch: GITHUB_FETCH
