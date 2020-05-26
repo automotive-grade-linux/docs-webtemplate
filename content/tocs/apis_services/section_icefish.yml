@@ -98,6 +98,11 @@ books:
           path: doc/api-services-book.yml
           dst_prefix: hmi-framework
 -
+    id: weston-ivi-plugins
+    git_name: src/weston-ivi-plugins
+    path: docs/waltham-book.yml
+    dst_prefix: weston-ivi-plugins
+-
     id: homescreen-developer-guides
     git_name: apps/homescreen
     path: homescreen/docs/api-services-book.yml
