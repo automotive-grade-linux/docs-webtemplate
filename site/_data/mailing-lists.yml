@@ -1,12 +1,12 @@
 -   title: Dev Mailing List
     links:
         -   label: Writing to the list
-            text: automotive-discussions@lists.linuxfoundation.org
-            href: mailto:automotive-discussions@lists.linuxfoundation.org 
+            text: https://lists.automotivelinux.org/g/agl-dev-community
+            href: https://lists.automotivelinux.org/g/agl-dev-community
 
         -   label: Browse online
-            text: Dev Mailing List Archive
-            href: https://lists.linuxfoundation.org/pipermail/automotive-discussions/
+            text: https://lists.automotivelinux.org/g/agl-dev-community
+            href: https://lists.automotivelinux.org/g/agl-dev-community
     description: >
         The Dev mailing list is a place for discussion about developing AGL.
         <br/>If you are AGL user looking for help, use the <a href="http://stackoverflow.com/questions/tagged/agl">AGL tag on Stack Overflow</a>.
