@@ -1,3 +1,16 @@
+Deprecated repo.  Please use  https://automotivegradelinux.readthedocs.io . The sources of it are in https://git.automotivelinux.org/AGL/documentation .
+
+
+
+
+
+
+
+
+
+
+
+
 # Introduction
 
 This repository contains AGL documentation website template, rendering is visible at http://docs.automotivelinux.org
