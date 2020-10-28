@@ -1,4 +1,6 @@
-Deprecated repo.  Please use  https://automotivegradelinux.readthedocs.io . The sources of it are in https://git.automotivelinux.org/AGL/documentation .
+# Deprecated repo. 
+
+Please use  https://automotivegradelinux.readthedocs.io . The sources of it are in https://git.automotivelinux.org/AGL/documentation .
 
 
 
